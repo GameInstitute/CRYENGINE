@@ -245,7 +245,7 @@ int main(int argc, char* argv[])
 	QString editorSettingsFile = engineRootDir.c_str() + QString("/editor.ini");
 	QSettings *pEditorSetting = new QSettings(editorSettingsFile, QSettings::IniFormat);
 
-	if (pEditorSetting)
+	if (pEditorSetting->status()==QSettings::NoError)
 	{
 		QString editorLang = pEditorSetting->value("/Sandbox/Language").toString();
 		translationFilesPath = engineRootDir.c_str() + QString("/Editor/UI/Translations/") + editorLang + QString("/");
