@@ -29,6 +29,7 @@
 #include <QSettings>
 #include <QFileSystemWatcher>
 #include <QMenuBar>
+#include <QTranslator>
 //////////////////////////////////////////////////////////////////////////
 
 #include "Util/BoostPythonHelpers.h"
@@ -206,6 +207,64 @@ int main(int argc, char* argv[])
 	QMfcApp::mfc_argc = argc;
 	QMfcApp::mfc_argv = argv;
 	QMfcApp qMfcApp(&mfcApp, QMfcApp::mfc_argc, QMfcApp::mfc_argv);
+
+	char szEngineRootDir[_MAX_PATH];
+	CryFindEngineRootFolder(CRY_ARRAY_COUNT(szEngineRootDir), szEngineRootDir);
+	string engineRootDir = PathUtil::RemoveSlash(szEngineRootDir);
+	QString translationFiles[26] = {
+		"editor.qm",
+		"CryDesigner.qm",
+		"DependencyGraph.qm",
+		"DialogEditor.qm",
+		"EditorAnimation.qm",
+		"EditorCommon.qm",
+		"EditorConsole.qm",
+		"EditorCSharp.qm",
+		"EditorDynamicResponseSystem.qm",
+		"EditorEnvironment.qm",
+		"EditorGameSDK.qm",
+		"EditorParticle.qm",
+		"EditorSchematyc.qm",
+		"EditorSchematyc2.qm",
+		"EditorSubstance.qm",
+		"EditorTrackView.qm",
+		"FacialEditorPlugin.qm",
+		"FBXPlugin.qm",
+		"LodGeneratorPlugin.qm",
+		"MaterialEditorPlugin.qm",
+		"MeshImporter.qm",
+		"MFCToolsPlugin.qm",
+		"SamplePlugin.qm",
+		"SchematycEditor.qm",
+		"SmartObjectEditor.qm",
+		"VehicleEditor.qm"
+	};
+
+	QString translationFilesPath;
+	
+	QString editorSettingsFile = engineRootDir.c_str() + QString("/editor.ini");
+	QSettings *pEditorSetting = new QSettings(editorSettingsFile, QSettings::IniFormat);
+
+	if (pEditorSetting)
+	{
+		QString editorLang = pEditorSetting->value("/Sandbox/Language").toString();
+		translationFilesPath = engineRootDir.c_str() + QString("/Editor/UI/Translations/") + editorLang + QString("/");
+	}
+	else
+	{
+		translationFilesPath = engineRootDir.c_str() + QString("/Editor/UI/Translations/") + QLocale::system().name().toLower() + QString("/");
+	}
+
+	
+	QTranslator translators[25];
+	for (int i = 0; i < translationFiles->size(); i++)
+	{
+		if (translators[i].load(translationFiles[i], translationFilesPath))
+		{
+			qMfcApp.installTranslator(&translators[i]);
+		}
+	}
+
 
 	// Make sure to load stylesheets before creating the mainframe. If not, any Qt widgets created before the mainframe
 	// might be created with erroneous style
