@@ -248,6 +248,7 @@ int main(int argc, char* argv[])
 
 	if (!editorLang.isNull())
 	{
+		
 		translationFilesPath = engineRootDir.c_str() + QString("/Editor/UI/Translations/") + editorLang + QString("/");
 	}
 	else
