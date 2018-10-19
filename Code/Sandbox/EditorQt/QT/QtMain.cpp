@@ -218,16 +218,23 @@ int main(int argc, char* argv[])
 	QString editorLang = pEditorSetting->value("/Sandbox/Language").toString();
 	if (!editorLang.isNull())
 	{
-		
 		translationFilesPath = engineRootDir.c_str() + QString("/Editor/UI/Translations/") + editorLang + QString("/");
+		CryWarning(VALIDATOR_MODULE_EDITOR, VALIDATOR_WARNING, "Read editor.ini successfully, editor folder is %s", translationFilesPath.toLocal8Bit().constData());
 	}
 	else
 	{
 		translationFilesPath = engineRootDir.c_str() + QString("/Editor/UI/Translations/") + QLocale::system().name().toLower() + QString("/");
+		CryWarning(VALIDATOR_MODULE_EDITOR, VALIDATOR_WARNING, "Read editor.ini failed, but use system language, editor folder is %s", translationFilesPath.toLocal8Bit().constData());
 	}	
 	QTranslator translator;
-	translator.load(translationFile, translationFilesPath);
-	qMfcApp.installTranslator(&translator);
+	if (translator.load(translationFile, translationFilesPath))
+	{
+		qMfcApp.installTranslator(&translator);
+	}
+	else
+	{
+		CryWarning(VALIDATOR_MODULE_EDITOR, VALIDATOR_WARNING, "Install Qt Translator failed!");
+	}
 
 	// Make sure to load stylesheets before creating the mainframe. If not, any Qt widgets created before the mainframe
 	// might be created with erroneous style
