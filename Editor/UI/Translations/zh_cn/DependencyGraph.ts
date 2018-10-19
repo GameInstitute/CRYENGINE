@@ -84,7 +84,7 @@
 </translation>
     </message>
     <message>
-        <location filename="../../../../Code/Sandbox/Plugins/DependencyGraph/Plugin.cpp" line="23"/>
+        <location filename="../../../../Code/Sandbox/Plugins/DependencyGraph/Plugin.cpp" line="26"/>
         <source>Show Dependency Graph</source>
         <translation>显示依赖图</translation>
     </message>

@@ -13,9 +13,9 @@ A new class with the same name can not be created!</source>
 不能创建相同名称的新类！</translation>
     </message>
     <message>
-        <location filename="../../../../Code/Sandbox/Plugins/SmartObjectEditor/SmartObjectEditorPlugin.cpp" line="175"/>
-        <location filename="../../../../Code/Sandbox/Plugins/SmartObjectEditor/SmartObjectEditorPlugin.cpp" line="194"/>
-        <location filename="../../../../Code/Sandbox/Plugins/SmartObjectEditor/SmartObjectEditorPlugin.cpp" line="214"/>
+        <location filename="../../../../Code/Sandbox/Plugins/SmartObjectEditor/SmartObjectEditorPlugin.cpp" line="199"/>
+        <location filename="../../../../Code/Sandbox/Plugins/SmartObjectEditor/SmartObjectEditorPlugin.cpp" line="218"/>
+        <location filename="../../../../Code/Sandbox/Plugins/SmartObjectEditor/SmartObjectEditorPlugin.cpp" line="238"/>
         <source>This field can not be edited because it needs the smart object class.
 Please, choose a smart object class first...</source>
         <translation>该字段无法编辑，因为它需要智能对象类。

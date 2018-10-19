@@ -2672,7 +2672,7 @@ All object of replaced layer will be deleted.</source>
         <translation>新预制名称</translation>
     </message>
     <message>
-        <location filename="../../../../Code/Sandbox/EditorQt/QT/QtMain.cpp" line="160"/>
+        <location filename="../../../../Code/Sandbox/EditorQt/QT/QtMain.cpp" line="161"/>
         <source>Waiting for debugger</source>
         <translation>调试器警告</translation>
     </message>

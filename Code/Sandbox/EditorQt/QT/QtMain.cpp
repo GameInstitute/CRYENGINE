@@ -211,41 +211,11 @@ int main(int argc, char* argv[])
 	char szEngineRootDir[_MAX_PATH];
 	CryFindEngineRootFolder(CRY_ARRAY_COUNT(szEngineRootDir), szEngineRootDir);
 	string engineRootDir = PathUtil::RemoveSlash(szEngineRootDir);
-	QString translationFiles[26] = {
-		"editor.qm",
-		"CryDesigner.qm",
-		"DependencyGraph.qm",
-		"DialogEditor.qm",
-		"EditorAnimation.qm",
-		"EditorCommon.qm",
-		"EditorConsole.qm",
-		"EditorCSharp.qm",
-		"EditorDynamicResponseSystem.qm",
-		"EditorEnvironment.qm",
-		"EditorGameSDK.qm",
-		"EditorParticle.qm",
-		"EditorSchematyc.qm",
-		"EditorSchematyc2.qm",
-		"EditorSubstance.qm",
-		"EditorTrackView.qm",
-		"FacialEditorPlugin.qm",
-		"FBXPlugin.qm",
-		"LodGeneratorPlugin.qm",
-		"MaterialEditorPlugin.qm",
-		"MeshImporter.qm",
-		"MFCToolsPlugin.qm",
-		"SamplePlugin.qm",
-		"SchematycEditor.qm",
-		"SmartObjectEditor.qm",
-		"VehicleEditor.qm"
-	};
-
-	QString translationFilesPath;
-	
+	QString translationFile = "EditorQt.qm";
+	QString translationFilesPath;	
 	QString editorSettingsFile = engineRootDir.c_str() + QString("/editor.ini");
 	QSettings *pEditorSetting = new QSettings(editorSettingsFile, QSettings::IniFormat);
 	QString editorLang = pEditorSetting->value("/Sandbox/Language").toString();
-
 	if (!editorLang.isNull())
 	{
 		
@@ -254,18 +224,10 @@ int main(int argc, char* argv[])
 	else
 	{
 		translationFilesPath = engineRootDir.c_str() + QString("/Editor/UI/Translations/") + QLocale::system().name().toLower() + QString("/");
-	}
-
-	
-	QTranslator translators[25];
-	for (int i = 0; i < translationFiles->size(); i++)
-	{
-		if (translators[i].load(translationFiles[i], translationFilesPath))
-		{
-			qMfcApp.installTranslator(&translators[i]);
-		}
-	}
-
+	}	
+	QTranslator translator;
+	translator.load(translationFile, translationFilesPath);
+	qMfcApp.installTranslator(&translator);
 
 	// Make sure to load stylesheets before creating the mainframe. If not, any Qt widgets created before the mainframe
 	// might be created with erroneous style

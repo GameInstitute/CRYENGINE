@@ -6,6 +6,10 @@
 
 #include "Vicon/Vicon_ClientCodes.h"
 
+#include <QCoreApplication>
+#include <QTranslator>
+#include <QSettings>	
+
 REGISTER_PLUGIN(CFacialEditorPlugin);
 
 CFacialEditorPlugin::CFacialEditorPlugin()
@@ -17,6 +21,26 @@ CFacialEditorPlugin::CFacialEditorPlugin()
 	REGISTER_CVAR(m_fViconScale, 1.0f, VF_NULL, "Scale from Vicon to our Joystick system");
 	m_ViconClient = new CViconClient(this);
 #endif
+
+	char szEngineRootDir[_MAX_PATH];
+	CryFindEngineRootFolder(CRY_ARRAY_COUNT(szEngineRootDir), szEngineRootDir);
+	string engineRootDir = PathUtil::RemoveSlash(szEngineRootDir);
+	QString translationFile = "FacialEditorPlugin.qm";
+	QString translationFilesPath;
+	QString editorSettingsFile = engineRootDir.c_str() + QString("/editor.ini");
+	QSettings *pEditorSetting = new QSettings(editorSettingsFile, QSettings::IniFormat);
+	QString editorLang = pEditorSetting->value("/Sandbox/Language").toString();
+	if (!editorLang.isNull())
+	{
+		translationFilesPath = engineRootDir.c_str() + QString("/Editor/UI/Translations/") + editorLang + QString("/");
+	}
+	else
+	{
+		translationFilesPath = engineRootDir.c_str() + QString("/Editor/UI/Translations/") + QLocale::system().name().toLower() + QString("/");
+	}
+	QTranslator translator;
+	translator.load(translationFile, translationFilesPath);
+	QCoreApplication::installTranslator(&translator);
 }
 
 void CFacialEditorPlugin::OnEditorNotifyEvent(EEditorNotifyEvent event)
