@@ -1031,6 +1031,26 @@ Do you really want to rename the asset?</source>
         <source>Deactivate</source>
         <translation>禁用</translation>
     </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/EditorCommon/BatchFileDialog.cpp" line="306"/>
+        <source>Load List...</source>
+        <translation>加载列表...</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/EditorCommon/BatchFileDialog.cpp" line="310"/>
+        <source>Select All</source>
+        <translation>全选</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/EditorCommon/BatchFileDialog.cpp" line="313"/>
+        <source>Select None</source>
+        <translation>清空选择</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/EditorCommon/Objects/BaseObject.cpp" line="4171"/>
+        <source>Minimum Graphics</source>
+        <translation>最低图形</translation>
+    </message>
 </context>
 <context>
     <name>QResourceBrowserDialog</name>

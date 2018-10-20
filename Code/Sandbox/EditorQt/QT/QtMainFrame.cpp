@@ -333,7 +333,7 @@ public:
 		actionSave_As = new QCommandAction(nullptr, nullptr, MainWindow);
 		actionSave_As->setObjectName(QStringLiteral("actionSave_As"));
 		actionSave_As->setIcon(CryIcon("icons:General/Save_as.ico"));
-		actionToggle_Content_Browser = new QCommandAction("Quick Asset Browser", "asset.toggle_browser", MainWindow);
+		actionToggle_Content_Browser = new QCommandAction(QObject::tr("Quick Asset Browser"), "asset.toggle_browser", MainWindow);
 		actionToggle_Content_Browser->setIcon(CryIcon("icons:Tools/tools_asset-browser.ico"));
 		actionExport_to_Engine = new QCommandAction(nullptr, nullptr, MainWindow);
 		actionExport_to_Engine->setObjectName(QStringLiteral("actionExport_to_Engine"));
@@ -528,7 +528,7 @@ public:
 		actionToggleNormalSnapping->setCheckable(true);
 		actionAlign_To_Object = GetIEditorImpl()->GetICommandManager()->GetAction("level.toggle_snap_to_pivot");
 		actionAlign_To_Object->setCheckable(true);
-		QString name("Snap Settings");
+		QString name(QObject::tr("Snap Settings"));
 		QString cmd = QString("general.open_pane '%1'").arg(name);
 		QCommandAction* pSnapSettings = new QCommandAction(name.append("..."), (const char*)cmd.toLocal8Bit(), menuAlign_Snap);
 		pSnapSettings->setIcon(CryIcon("icons:Viewport/viewport-snap-options.ico"));
@@ -1949,13 +1949,13 @@ void CEditorMainFrame::InitMenus()
 	else
 	{
 		// Add entries
-		QString name("Keyboard Shortcuts");
+		QString name=QObject::tr("Keyboard Shortcuts");
 		QString cmd = QString("general.open_pane '%1'").arg(name);
 		QCommandAction* pKeyboardShortcuts = new QCommandAction(name.append("..."), (const char*)cmd.toLocal8Bit(), editMenu);
 		pKeyboardShortcuts->setIcon(CryIcon("icons:Tools/Keyboard_Shortcuts.ico"));
 		editMenu->addAction(pKeyboardShortcuts);
 
-		name = "Preferences";
+		name = QObject::tr("Preferences");
 		cmd = QString("general.open_pane '%1'").arg(name);
 		editMenu->addAction(new QCommandAction(name.append("..."), (const char*)cmd.toLocal8Bit(), editMenu));
 
@@ -1974,7 +1974,7 @@ void CEditorMainFrame::InitMenus()
 
 		}
 
-		name = "Undo History";
+		name = QObject::tr("Undo History");
 		cmd = QString("general.open_pane '%1'").arg(name);
 		QAction* pUndoHistory = new QCommandAction(name, (const char*)cmd.toLocal8Bit(), editMenu);
 		pUndoHistory->setIcon(CryIcon("icons:General/History_Undo_List.ico"));

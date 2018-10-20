@@ -43,6 +43,9 @@
 
 #include <CryMath/Random.h>
 
+#include <QObject>
+#include <QtCore/qobjectdefs.h>
+
 //////////////////////////////////////////////////////////////////////////
 #define GAMETOKENS_LEVEL_LIBRARY_FILE "LevelGameTokens.xml"
 #define MATERIAL_LEVEL_LIBRARY_FILE   "Materials.xml"

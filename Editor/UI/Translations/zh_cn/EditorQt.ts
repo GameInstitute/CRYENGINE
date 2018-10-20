@@ -2677,9 +2677,34 @@ All object of replaced layer will be deleted.</source>
         <translation>调试器警告</translation>
     </message>
     <message>
+        <location filename="../../../../Code/Sandbox/EditorQt/QT/QtMainFrame.cpp" line="336"/>
+        <source>Quick Asset Browser</source>
+        <translation>快速资源浏览器</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/EditorQt/QT/QtMainFrame.cpp" line="531"/>
+        <source>Snap Settings</source>
+        <translation>对齐设置</translation>
+    </message>
+    <message>
         <location filename="../../../../Code/Sandbox/EditorQt/QT/QtMainFrame.cpp" line="957"/>
         <source>Layers</source>
         <translation>图层</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/EditorQt/QT/QtMainFrame.cpp" line="1952"/>
+        <source>Keyboard Shortcuts</source>
+        <translation>键盘快捷键</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/EditorQt/QT/QtMainFrame.cpp" line="1958"/>
+        <source>Preferences</source>
+        <translation>首选项</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/EditorQt/QT/QtMainFrame.cpp" line="1977"/>
+        <source>Undo History</source>
+        <translation>撤销历史</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/EditorQt/QT/Widgets/QViewportHeader.cpp" line="659"/>
