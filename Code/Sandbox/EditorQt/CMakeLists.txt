@@ -1513,7 +1513,7 @@ PRIVATE
 )
 target_link_libraries(${THIS_PROJECT} PRIVATE tiff zlib prt)
 if(WIN32)
-	target_link_libraries(${THIS_PROJECT} PRIVATE FbxSdk)
+	target_link_libraries(${THIS_PROJECT} PRIVATE FbxSdk libiconv libintl)
 	target_link_libraries(${THIS_PROJECT} PRIVATE qtmain$<$<CONFIG:Debug>:d>)
 endif()
 

@@ -39,7 +39,7 @@ end_sources()
 
 CryEditorPlugin(EditorUQS PCH "StdAfx.cpp" SOLUTION_FOLDER "CryPlugins/CryUQS")
 target_link_libraries (${THIS_PROJECT} PRIVATE
-	CryUQS_DataSource_XML
+	CryUQS_DataSource_XML libiconv libintl
 )
 
 target_include_directories(${THIS_PROJECT}

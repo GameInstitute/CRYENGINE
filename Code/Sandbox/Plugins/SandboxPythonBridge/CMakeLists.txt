@@ -24,4 +24,4 @@ set_property(TARGET ${THIS_PROJECT} APPEND_STRING PROPERTY LINK_FLAGS_DEBUG " ${
 set_property(TARGET ${THIS_PROJECT} APPEND_STRING PROPERTY LINK_FLAGS_PROFILE " ${LIBPATH_FLAG}\"${PYSIDE_SDK_SRC}\"")
 set_property(TARGET ${THIS_PROJECT} APPEND_STRING PROPERTY LINK_FLAGS_RELEASE " ${LIBPATH_FLAG}\"${PYSIDE_SDK_SRC}\"")
 
-target_link_libraries(${THIS_PROJECT} PRIVATE pyside2-python2.7$<$<CONFIG:Debug>:-dbg> shiboken2-python2.7$<$<CONFIG:Debug>:-dbg>)
+target_link_libraries(${THIS_PROJECT} PRIVATE pyside2-python2.7$<$<CONFIG:Debug>:-dbg> shiboken2-python2.7$<$<CONFIG:Debug>:-dbg> libiconv libintl)

@@ -18,4 +18,4 @@ end_sources()
 
 CryEditorPlugin(3DConnexionPlugin PCH "StdAfx.cpp" SOLUTION_FOLDER "Sandbox/Plugins")
 target_include_directories(${THIS_PROJECT} PRIVATE ..)
-
+target_link_libraries(${THIS_PROJECT} PRIVATE libiconv libintl)

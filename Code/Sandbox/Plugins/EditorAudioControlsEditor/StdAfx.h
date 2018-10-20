@@ -24,3 +24,4 @@
 
 #include <CryMath/Cry_Math.h>
 
+#include <libintl.h>

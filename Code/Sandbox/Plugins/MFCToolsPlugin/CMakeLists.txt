@@ -159,7 +159,7 @@ target_compile_definitions(${THIS_PROJECT} PRIVATE
 	-DEDITOR_COMMON_IMPORTS 
 	-DNOT_USE_CRY_MEMORY_MANAGER
 )
-target_link_libraries(${THIS_PROJECT} PRIVATE EditorCommon tiff)
+target_link_libraries(${THIS_PROJECT} PRIVATE EditorCommon tiff libiconv libintl)
 
 target_include_directories( ${THIS_PROJECT} PRIVATE "${SDK_DIR}/squish-ccr")
 target_include_directories( ${THIS_PROJECT} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})

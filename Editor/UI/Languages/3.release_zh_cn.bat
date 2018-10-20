@@ -1,0 +1,1 @@
+msgfmt --check --verbose --output-file ./zh_CN.UTF-8/LC_MESSAGES/Sandbox.mo ./zh_CN.UTF-8/Sandbox.po

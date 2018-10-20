@@ -29,3 +29,4 @@
 #include "EditorCommon.h"
 #include "IEditor.h"
 
+#include <libintl.h>

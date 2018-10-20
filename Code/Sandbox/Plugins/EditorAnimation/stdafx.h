@@ -55,3 +55,4 @@ void     Log(const char* format, ...);
 
 #include <qt_windows.h>
 
+#include <libintl.h>

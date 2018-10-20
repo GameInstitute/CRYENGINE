@@ -22,6 +22,8 @@
 #include <set>
 #include <algorithm>
 
+#include <libintl.h>
+
 // Additional CryEngine headers.
 #include <CrySystem/ISystem.h>
 #include <CryCore/functor.h>

@@ -21,6 +21,8 @@ CryEditorPlugin(EditorUQS_HistoryInspector PCH "StdAfx.cpp" SOLUTION_FOLDER "Cry
 target_link_libraries (${THIS_PROJECT} PRIVATE
 	Sandbox
 	EditorCommon
+	libiconv
+	libintl
 )
 
 target_include_directories(${THIS_PROJECT}

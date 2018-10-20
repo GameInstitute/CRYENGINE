@@ -7,6 +7,8 @@ set(CMAKE_AUTOMOC_RELAXED_MODE TRUE)
 
 #modules
 include("${TOOLS_CMAKE_DIR}/modules/FbxSdk.cmake")
+include("${TOOLS_CMAKE_DIR}/modules/libiconv.cmake")
+include("${TOOLS_CMAKE_DIR}/modules/libintl.cmake")
 #---
 
 add_subdirectory("Code/Sandbox/Libs/CryQt")

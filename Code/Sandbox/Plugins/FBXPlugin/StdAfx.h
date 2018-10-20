@@ -27,3 +27,4 @@
 #include "Util/EditorUtils.h"
 #include "IEditor.h"
 
+#include <libintl.h>

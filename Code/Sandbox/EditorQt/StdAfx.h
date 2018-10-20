@@ -49,3 +49,4 @@
 #include "EditorCommon.h"
 #include "IEditorClassFactory.h"
 
+#include <libintl.h>

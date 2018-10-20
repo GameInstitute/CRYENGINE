@@ -138,3 +138,4 @@ PRIVATE
 )
 use_xt()
 
+target_link_libraries(${THIS_PROJECT} PRIVATE libiconv libintl)

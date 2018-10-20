@@ -57,3 +57,4 @@
 #include "Core/Common.h"
 #include "Util/DesignerSettings.h"
 
+#include <libintl.h>

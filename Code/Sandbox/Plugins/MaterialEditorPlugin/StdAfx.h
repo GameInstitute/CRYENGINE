@@ -18,3 +18,4 @@
 #include "Material/Material.h"
 #include "Material/MaterialManager.h"
 
+#include <libintl.h>

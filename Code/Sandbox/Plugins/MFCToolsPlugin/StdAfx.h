@@ -25,3 +25,4 @@
 
 #include <CryCore/smartptr.h>
 
+#include <libintl.h>

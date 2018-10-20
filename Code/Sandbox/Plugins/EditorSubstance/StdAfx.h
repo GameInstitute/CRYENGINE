@@ -17,6 +17,8 @@
 #include <QList>
 #include "QtUtil.h"
 
+#include <libintl.h>
+
 // std::unique_ptr and _smart_ptr conversions
 #include <CryCore/smartptr.h>
 #include <memory>

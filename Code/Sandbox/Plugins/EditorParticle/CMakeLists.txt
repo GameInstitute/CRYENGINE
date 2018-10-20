@@ -54,6 +54,6 @@ CryEditorPlugin(EditorParticle PCH "StdAfx.cpp" SOLUTION_FOLDER "Sandbox/Plugins
 target_include_directories(${THIS_PROJECT} PRIVATE ../../EditorQt)	
 target_include_directories(${THIS_PROJECT} PRIVATE ../../EditorQt/Include)
 
-target_link_libraries(${THIS_PROJECT} PRIVATE Sandbox)
+target_link_libraries(${THIS_PROJECT} PRIVATE Sandbox libiconv libintl)
 
 

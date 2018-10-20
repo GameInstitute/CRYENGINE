@@ -33,4 +33,4 @@
 
 #include "EditorCommon.h"
 
-
+#include <libintl.h>

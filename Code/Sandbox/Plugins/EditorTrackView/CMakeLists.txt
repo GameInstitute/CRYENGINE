@@ -99,7 +99,7 @@ target_include_directories(${THIS_PROJECT} PRIVATE ../../EditorQt)
 target_include_directories(${THIS_PROJECT} PRIVATE ../../EditorQt/Include)
 target_include_directories(${THIS_PROJECT} PRIVATE ../MFCToolsPlugin)
 
-target_link_libraries(${THIS_PROJECT} PRIVATE Sandbox MFCToolsPlugin)
+target_link_libraries(${THIS_PROJECT} PRIVATE Sandbox MFCToolsPlugin libiconv libintl)
 set_libpath_flag()
 set_property(TARGET ${THIS_PROJECT} APPEND_STRING PROPERTY LINK_FLAGS " ${LIBPATH_FLAG}\"${SDK_DIR}/Python27/x64/libs\"")
 

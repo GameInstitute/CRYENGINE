@@ -32,7 +32,7 @@ target_include_directories(${THIS_PROJECT} BEFORE PRIVATE ../../EditorQt)
 target_include_directories(${THIS_PROJECT} PRIVATE ../MFCToolsPlugin)
 
 target_link_libraries(${THIS_PROJECT} PRIVATE Sandbox)
-target_link_libraries(${THIS_PROJECT} PRIVATE MFCToolsPlugin)
+target_link_libraries(${THIS_PROJECT} PRIVATE MFCToolsPlugin libiconv libintl)
 
 use_xt()
 

@@ -57,6 +57,8 @@
 #include <Serialization/QPropertyTree/QPropertyTree.h>
 #include "IResourceSelectorHost.h"
 
+#include <libintl.h>
+
 IEditor*               GetIEditor();
 pfx2::IParticleSystem* GetParticleSystem();
 

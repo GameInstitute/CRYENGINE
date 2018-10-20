@@ -24,3 +24,4 @@
 #include <algorithm>
 #include <memory>
 
+#include <libintl.h>

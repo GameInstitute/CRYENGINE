@@ -11,3 +11,4 @@
 #include "Controls\DictionaryWidget.h"
 #include <QtUtil.h>
 
+#include <libintl.h>

@@ -16,3 +16,4 @@
 #include <CrySerialization/yasli/Archive.h>
 #include <CrySerialization/yasli/STL.h>
 
+#include <libintl.h>

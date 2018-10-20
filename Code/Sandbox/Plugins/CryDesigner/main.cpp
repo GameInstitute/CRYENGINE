@@ -42,25 +42,7 @@ class EditorDesigner : public IPlugin, public IAutoEditorNotifyListener
 public:
 	EditorDesigner()
 	{
-		char szEngineRootDir[_MAX_PATH];
-		CryFindEngineRootFolder(CRY_ARRAY_COUNT(szEngineRootDir), szEngineRootDir);
-		string engineRootDir = PathUtil::RemoveSlash(szEngineRootDir);
-		QString translationFile = "CryDesigner.qm";
-		QString translationFilesPath;
-		QString editorSettingsFile = engineRootDir.c_str() + QString("/editor.ini");
-		QSettings *pEditorSetting = new QSettings(editorSettingsFile, QSettings::IniFormat);
-		QString editorLang = pEditorSetting->value("/Sandbox/Language").toString();
-		if (!editorLang.isNull())
-		{
-			translationFilesPath = engineRootDir.c_str() + QString("/Editor/UI/Translations/") + editorLang + QString("/");
-		}
-		else
-		{
-			translationFilesPath = engineRootDir.c_str() + QString("/Editor/UI/Translations/") + QLocale::system().name().toLower() + QString("/");
-		}
-		QTranslator translator;
-		translator.load(translationFile, translationFilesPath);
-		QCoreApplication::installTranslator(&translator);
+		InitialTranslator("CryDesigner","CryDesigner.qm");
 	}
 	int32       GetPluginVersion() override { return 1; }
 	const char* GetPluginName() override    { return "CryDesigner"; }

@@ -26,6 +26,7 @@ CryEditorPlugin(PerforcePlugin PCH "stdafx.cpp" SOLUTION_FOLDER "Sandbox/Plugins
 force_static_crt()
 target_compile_definitions(${THIS_PROJECT} PRIVATE -DBOOST_ALL_NO_LIB)
 target_include_directories(${THIS_PROJECT} PRIVATE "${SDK_DIR}/p4api/include")
+target_link_libraries(${THIS_PROJECT} PRIVATE libiconv libintl)
 
 if (MSVC_VERSION GREATER 1900) # Visual Studio > 2015
 	set(p4api_subfolder vc14)

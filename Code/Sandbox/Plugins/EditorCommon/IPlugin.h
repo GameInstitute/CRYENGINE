@@ -13,6 +13,14 @@
 #include "BoostPythonMacros.h"
 #include "IResourceSelectorHost.h"
 
+#include <QCoreApplication>
+#include <QTranslator>
+#include <QSettings>
+#include <QLocale>
+#include <libintl.h>
+
+#include <CryString/CryPath.h>
+
 //! Interface for declaring an editor plugin
 //! Register in a .cpp file using REGISTER_PLUGIN() macro
 //! Use constructors and destructors as entry and exit point for your plugin's code.
@@ -30,6 +38,44 @@ struct IPlugin
 	virtual const char* GetPluginName() = 0;
 	//! Returns the human readable description of the plugin
 	virtual const char* GetPluginDescription() = 0;
+
+	void InitialTranslator(const char* domain, const char* qtTranslationFilename)
+	{
+		char szEngineRootDir[_MAX_PATH];
+		CryFindEngineRootFolder(CRY_ARRAY_COUNT(szEngineRootDir), szEngineRootDir);
+		string engineRootDir = PathUtil::RemoveSlash(szEngineRootDir);
+
+		string domainTranslationFilesPath;
+		domainTranslationFilesPath = engineRootDir + "/Editor/UI/Languages/";
+
+		setlocale(LC_ALL, "");
+		bindtextdomain(domain, domainTranslationFilesPath.c_str());
+		textdomain(domain);
+
+		QString qtTranslationFilesPath;
+		QString editorSettingsFile = engineRootDir.c_str() + QString("/editor.ini");
+		QSettings *pEditorSetting = new QSettings(editorSettingsFile, QSettings::IniFormat);
+		QString editorLang = pEditorSetting->value("/Sandbox/Language").toString();
+		if (!editorLang.isNull())
+		{
+			qtTranslationFilesPath = engineRootDir.c_str() + QString("/Editor/UI/Translations/") + editorLang + QString("/");
+			CryWarning(VALIDATOR_MODULE_EDITOR, VALIDATOR_WARNING, "%s: Read editor.ini successfully, editor folder is %s", GetPluginName(), qtTranslationFilesPath.toLocal8Bit().constData());
+		}
+		else
+		{
+			qtTranslationFilesPath = engineRootDir.c_str() + QString("/Editor/UI/Translations/") + QLocale::system().name().toLower() + QString("/");
+			CryWarning(VALIDATOR_MODULE_EDITOR, VALIDATOR_WARNING, "%s:Read editor.ini failed, but use system language, editor folder is %s", GetPluginName(), qtTranslationFilesPath.toLocal8Bit().constData());
+		}
+		QTranslator translator;
+		if (translator.load(qtTranslationFilename, qtTranslationFilesPath))
+		{
+			QCoreApplication::installTranslator(&translator);
+		}
+		else
+		{
+			CryWarning(VALIDATOR_MODULE_EDITOR, VALIDATOR_WARNING, "%s:Install Qt Translator failed!",GetPluginName());
+		}
+	}
 };
 
 #ifndef eCryModule

@@ -43,6 +43,6 @@ target_include_directories(${THIS_PROJECT} PRIVATE "${CRYENGINE_DIR}/Code/CryEng
 #target_link_libraries(${THIS_PROJECT} PRIVATE Sandbox)
 
 target_include_directories(${THIS_PROJECT} PRIVATE ../MFCToolsPlugin)
-target_link_libraries(${THIS_PROJECT} PRIVATE MFCToolsPlugin)
+target_link_libraries(${THIS_PROJECT} PRIVATE MFCToolsPlugin libiconv libintl)
 				
 

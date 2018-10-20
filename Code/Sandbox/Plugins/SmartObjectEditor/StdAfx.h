@@ -11,3 +11,4 @@
 
 #include "Resource.h"
 
+#include <libintl.h>

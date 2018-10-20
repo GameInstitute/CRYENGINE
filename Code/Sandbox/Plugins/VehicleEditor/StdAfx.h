@@ -13,3 +13,5 @@
 
 #include "IObjectManager.h"
 #include "Resource.h"
+
+#include <libintl.h>

@@ -20,6 +20,7 @@ CPerforcePlugin::CPerforcePlugin()
 {
 	g_pPerforceControl = new CPerforceSourceControl();
 	GetIEditor()->GetClassFactory()->RegisterClass(g_pPerforceControl);
+	InitialTranslator("PerforcePlugin", "PerforcePlugin.qm");
 }
 
 CPerforcePlugin::~CPerforcePlugin()

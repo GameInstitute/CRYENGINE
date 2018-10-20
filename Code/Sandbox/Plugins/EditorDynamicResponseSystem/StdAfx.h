@@ -15,3 +15,4 @@
 #include <QDockWidget>
 #include <QMainWindow>
 
+#include <libintl.h>

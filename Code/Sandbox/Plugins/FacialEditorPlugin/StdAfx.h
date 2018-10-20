@@ -15,3 +15,5 @@
 #include "Resource.h"
 
 #include "Util/Variable.h"
+
+#include <libintl.h>

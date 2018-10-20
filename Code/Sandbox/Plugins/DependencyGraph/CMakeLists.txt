@@ -29,3 +29,4 @@ end_sources()
 
 CryEditorPlugin(DependencyGraph PCH "StdAfx.cpp" SOLUTION_FOLDER "Sandbox/Plugins")
 
+target_link_libraries(${THIS_PROJECT} PRIVATE libiconv libintl)

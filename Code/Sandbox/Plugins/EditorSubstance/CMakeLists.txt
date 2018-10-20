@@ -82,7 +82,7 @@ target_include_directories(${THIS_PROJECT} PRIVATE ../../EditorQt/Include)
 target_include_directories(${THIS_PROJECT} PRIVATE ../MFCToolsPlugin)	
 target_include_directories(${THIS_PROJECT} PRIVATE "${CRYENGINE_DIR}/Code/Sandbox/Libs/CrySubstance")
 
-target_link_libraries(${THIS_PROJECT} PRIVATE Sandbox Substance MFCToolsPlugin CrySubstance)
+target_link_libraries(${THIS_PROJECT} PRIVATE Sandbox Substance MFCToolsPlugin CrySubstance libiconv libintl)
 
 copy_substance()
 #target_compile_definitions(${THIS_PROJECT} PRIVATE -DBUILDING_FBX_TOOL)

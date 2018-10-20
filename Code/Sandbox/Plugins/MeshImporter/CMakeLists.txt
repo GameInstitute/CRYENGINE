@@ -198,6 +198,6 @@ target_include_directories(${THIS_PROJECT} PRIVATE ../../EditorQt)
 target_include_directories(${THIS_PROJECT} PRIVATE ../../EditorQt/Include)
 target_include_directories(${THIS_PROJECT} PRIVATE ../MFCToolsPlugin)	
 
-target_link_libraries(${THIS_PROJECT} PRIVATE Sandbox MFCToolsPlugin FbxSdk)
+target_link_libraries(${THIS_PROJECT} PRIVATE Sandbox MFCToolsPlugin FbxSdk libiconv libintl)
 target_compile_definitions(${THIS_PROJECT} PRIVATE -DBUILDING_FBX_TOOL)
 

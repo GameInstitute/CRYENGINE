@@ -29,7 +29,7 @@ CryEditorPlugin(EditorDynamicResponseSystem PCH "StdAfx.cpp" SOLUTION_FOLDER "Sa
 target_include_directories(${THIS_PROJECT} PRIVATE ../../EditorQt)
 target_include_directories(${THIS_PROJECT} PRIVATE ../MFCToolsPlugin)
 
-target_link_libraries(${THIS_PROJECT} PRIVATE Sandbox MFCToolsPlugin)
+target_link_libraries(${THIS_PROJECT} PRIVATE Sandbox MFCToolsPlugin libiconv libintl)
 
 
 
