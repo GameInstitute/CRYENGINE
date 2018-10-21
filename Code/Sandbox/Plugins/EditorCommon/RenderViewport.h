@@ -36,7 +36,7 @@ struct SCameraPreferences : public SPreferencePage
 		ar(speedHeightRelativeEnabled, "speedHeightRelativeEnabled", gettext("Speed Height Relative"));
 		ar.closeBlock();
 
-		ar.openBlock("general", gettext("Collisions");
+		ar.openBlock("general", gettext("Collisions"));
 		ar(terrainCollisionEnabled, "terrainCollisionEnabled", gettext("Terrain Collision"));
 		ar(objectCollisionEnabled, "objectCollisionEnabled", gettext("Object Collision"));
 		ar.closeBlock();
