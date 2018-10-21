@@ -22,8 +22,8 @@ struct SVertexSnappingPreferences : public SPreferencePage
 
 	virtual bool Serialize(yasli::Archive& ar) override
 	{
-		ar.openBlock("Vertex Snapping", "Vertex Snapping");
-		ar(yasli::Range(m_vertexCubeSize, 0.0025f, 0.25f), "vertexCubesize", "Vertex Cube Size");
+		ar.openBlock("Vertex Snapping", gettext("Vertex Snapping"));
+		ar(yasli::Range(m_vertexCubeSize, 0.0025f, 0.25f), "vertexCubesize", gettext("Vertex Cube Size"));
 		ar.closeBlock();
 
 		return true;

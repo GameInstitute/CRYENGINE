@@ -32,13 +32,13 @@ struct SCameraPreferences : public SPreferencePage
 
 	virtual bool Serialize(yasli::Archive& ar) override
 	{
-		ar.openBlock("general", "General");
-		ar(speedHeightRelativeEnabled, "speedHeightRelativeEnabled", "Speed Height Relative");
+		ar.openBlock("general", gettext("General"));
+		ar(speedHeightRelativeEnabled, "speedHeightRelativeEnabled", gettext("Speed Height Relative"));
 		ar.closeBlock();
 
-		ar.openBlock("general", "Collisions");
-		ar(terrainCollisionEnabled, "terrainCollisionEnabled", "Terrain Collision");
-		ar(objectCollisionEnabled, "objectCollisionEnabled", "Object Collision");
+		ar.openBlock("general", gettext("Collisions");
+		ar(terrainCollisionEnabled, "terrainCollisionEnabled", gettext("Terrain Collision"));
+		ar(objectCollisionEnabled, "objectCollisionEnabled", gettext("Object Collision"));
 		ar.closeBlock();
 
 		return true;

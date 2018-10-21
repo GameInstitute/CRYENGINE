@@ -1286,9 +1286,9 @@ namespace
 }
 
 REGISTER_PYTHON_COMMAND_WITH_EXAMPLE(PyToggleHelpers, general, toggle_helpers,
-	gettext("Toggles the display of helpers."),
+	"Toggles the display of helpers.",
 	"general.toggle_helpers()");
 REGISTER_PYTHON_COMMAND_WITH_EXAMPLE(PyIsHelpersShown, general, is_helpers_shown,
-	gettext("Gets the display state of helpers."),
+	"Gets the display state of helpers.",
 	"general.is_helpers_shown()");
-REGISTER_PYTHON_COMMAND(PyCycleDisplayInfo, general, cycle_displayinfo, gettext("Cycle display info."));
+REGISTER_PYTHON_COMMAND(PyCycleDisplayInfo, general, cycle_displayinfo, "Cycle display info.");

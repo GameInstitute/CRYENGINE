@@ -107,22 +107,22 @@ void PySaveLayoutAs()
 }
 
 REGISTER_PYTHON_COMMAND_WITH_EXAMPLE(PyLoadLayoutFromFile, layout, load,
-	gettext("Loads a layout from file."),
+                                     "Loads a layout from file.",
                                      "layout.load(str path)");
 
 REGISTER_PYTHON_COMMAND_WITH_EXAMPLE(PySaveLayoutToFile, layout, save,
-	gettext("Saves current layout to a file."),
+                                     "Saves current layout to a file.",
                                      "layout.save(str absolutePath)");
 
 REGISTER_PYTHON_COMMAND_WITH_EXAMPLE(PyResetLayout, layout, reset,
-	gettext("Reset Layout"),
+                                     "Reset Layout",
                                      "");
 
 REGISTER_PYTHON_COMMAND_WITH_EXAMPLE(PyLoadLayoutDlg, layout, load_dlg,
-	gettext("Load Layout..."), "");
+                                     "Load Layout...", "");
 
 REGISTER_PYTHON_COMMAND_WITH_EXAMPLE(PySaveLayoutAs, layout, save_as,
-	gettext("Save Layout As..."), "");
+                                     "Save Layout As...", "");
 
 //////////////////////////////////////////////////////////////////////////
 CTabPaneManager::CTabPaneManager(QWidget* const pParent)
@@ -919,13 +919,7 @@ void CTabPaneManager::SetState(const QVariant& state)
 	if (mainWindowStateVar.isValid())
 	{
 		GetToolManager()->hide();
-
-		// We do not want to clear the tool manager at the application star-up time.
-		// For some reason this changes the value of AfxGetMainWnd(), which can break the initialization of MFC tools.
-		if (!GetToolManager()->toolWindows().empty())
-		{
-			GetToolManager()->clear();
-		}
+		GetToolManager()->clear();
 
 		for (QVariantMap::const_iterator iter = openToolsMap.begin(); iter != openToolsMap.end(); ++iter)
 		{

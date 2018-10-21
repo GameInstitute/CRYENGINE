@@ -88,8 +88,8 @@ struct SPerformancePreferences : public SPreferencePage
 
 	virtual bool Serialize(yasli::Archive& ar) override
 	{
-		ar.openBlock("performance", "Performance");
-		ar(yasli::Range(userInputPriorityTime, 0, 10000), "userInputPriorityFramerate", "Priority To User Input after (ms)");
+		ar.openBlock("performance", gettext("Performance"));
+		ar(yasli::Range(userInputPriorityTime, 0, 10000), "userInputPriorityFramerate", gettext("Priority To User Input after (ms)"));
 		ar.closeBlock();
 
 		return true;

@@ -34,9 +34,9 @@ bool STrackViewPreferences::Serialize(yasli::Archive& ar)
 	const int userInterfaceMinFps = 10;
 	const int userInterfaceMaxFps = 30;
 
-	ar.openBlock("general", "General");
+	ar.openBlock("general", gettext("General"));
 	int fps = oneSec / userInterfaceRefreshRate;
-	ar(yasli::Range(fps, userInterfaceMinFps, userInterfaceMaxFps), "uiFps", "UI refresh rate (fps)");
+	ar(yasli::Range(fps, userInterfaceMinFps, userInterfaceMaxFps), "uiFps", gettext("UI refresh rate (fps)"));
 	userInterfaceRefreshRate = oneSec / fps;
 
 	ar.closeBlock();

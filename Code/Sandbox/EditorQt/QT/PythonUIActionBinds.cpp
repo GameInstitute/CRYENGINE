@@ -240,8 +240,8 @@ struct SAudioGeneralPreferences : public SPreferencePage
 
 	virtual bool Serialize(yasli::Archive& ar) override
 	{
-		ar.openBlock("general", "General");
-		ar(bMuteAudio, "muteAudio", "Mute Audio");
+		ar.openBlock("general", gettext("General"));
+		ar(bMuteAudio, "muteAudio", gettext("Mute Audio"));
 		ar.closeBlock();
 
 		if (ar.isInput())

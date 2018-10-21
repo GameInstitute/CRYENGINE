@@ -21,8 +21,8 @@ struct STagPointPreferences : public SPreferencePage
 
 	virtual bool Serialize(yasli::Archive& ar) override
 	{
-		ar.openBlock("tagPoint", "Tag Point");
-		ar(tagpointScaleMulti, "tagpointScaleMulti", "Tagpoint Scale Multiplier");
+		ar.openBlock("tagPoint", gettext("Tag Point"));
+		ar(tagpointScaleMulti, "tagpointScaleMulti", gettext("Tagpoint Scale Multiplier"));
 
 		return true;
 	}

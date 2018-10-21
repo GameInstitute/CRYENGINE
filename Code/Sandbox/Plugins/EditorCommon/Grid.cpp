@@ -42,18 +42,18 @@ REGISTER_PREFERENCES_PAGE_PTR(SSnappingPreferences, &gSnappingPreferences)
 
 bool SSnappingPreferences::Serialize(yasli::Archive& ar)
 {
-	ar.openBlock("gridSnapping", "Grid Snapping");
-	ar(yasli::Range(m_gridSize, 0.001, 10000.0), "gridSize", "Grid Size");
-	ar(yasli::Range(m_gridScale, 0.001, 10000.0), "gridScale", "Grid Scale");
-	ar(yasli::Range(m_gridMajorLine, 1, 10000), "gridMajorLine", "Grid Major Line");
+	ar.openBlock("gridSnapping", gettext("Grid Snapping"));
+	ar(yasli::Range(m_gridSize, 0.001, 10000.0), "gridSize", gettext("Grid Size"));
+	ar(yasli::Range(m_gridScale, 0.001, 10000.0), "gridScale", gettext("Grid Scale"));
+	ar(yasli::Range(m_gridMajorLine, 1, 10000), "gridMajorLine", gettext("Grid Major Line"));
 	ar.closeBlock();
 
-	ar.openBlock("angleSnapping", "Angle Snapping");
-	ar(yasli::Range(m_angleSnap, 0.001, 360.0), "angleSnap", "Angle Snap");
+	ar.openBlock("angleSnapping", gettext("Angle Snapping"));
+	ar(yasli::Range(m_angleSnap, 0.001, 360.0), "angleSnap", gettext("Angle Snap"));
 	ar.closeBlock();
 
-	ar.openBlock("scaleSnapping", "Scale Snapping");
-	ar(yasli::Range(m_scaleSnap, 0.01f, 1000.0f), "scaleSnap", "Scale Snap");
+	ar.openBlock("scaleSnapping", gettext("Scale Snapping"));
+	ar(yasli::Range(m_scaleSnap, 0.01f, 1000.0f), "scaleSnap", gettext("Scale Snap"));
 	ar.closeBlock();
 	return true;
 }

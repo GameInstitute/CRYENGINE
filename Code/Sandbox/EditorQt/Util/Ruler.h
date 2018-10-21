@@ -20,9 +20,9 @@ struct SRulerPreferences : public SPreferencePage
 
 	virtual bool Serialize(yasli::Archive& ar) override
 	{
-		ar.openBlock("Ruler", "Ruler");
-		ar(yasli::Range(rulerSphereScale, 0.01f, 100.f), "rulerSphereScale", "Ruler Sphere Scale");
-		ar(yasli::Range(rulerSphereTrans, 0.01f, 100.f), "rulerSphereTrans", "Ruler Sphere Transparency");
+		ar.openBlock("Ruler", gettext("Ruler"));
+		ar(yasli::Range(rulerSphereScale, 0.01f, 100.f), "rulerSphereScale", gettext("Ruler Sphere Scale"));
+		ar(yasli::Range(rulerSphereTrans, 0.01f, 100.f), "rulerSphereTrans", gettext("Ruler Sphere Transparency"));
 		ar.closeBlock();
 
 		return true;

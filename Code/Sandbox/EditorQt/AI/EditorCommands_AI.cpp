@@ -109,37 +109,37 @@ REGISTER_AGENT_TYPE_COMMAND(4, PyRegenerateAgentTypeLayer, ai, regenerate_agent_
 REGISTER_AGENT_TYPE_COMMAND(5, PyRegenerateAgentTypeLayer, ai, regenerate_agent_type_layer)
 
 REGISTER_EDITOR_AND_SCRIPT_COMMAND(Private_EditorCommands::PyGenerateCoverSurfaces, ai, generate_cover_surfaces,
-	CCommandDescription(gettext("Generate Cover Surfaces")));
+	CCommandDescription("Generate Cover Surfaces"));
 
 REGISTER_PYTHON_COMMAND_WITH_EXAMPLE(Private_EditorCommands::PyRegenerateMNMType, ai, regenerate_mnm_type,
-	gettext("Regenerate navmesh for specified agent type ('all' for all types)"),
+	"Regenerate navmesh for specified agent type ('all' for all types)",
 	"ai.regenerate_mnm_type(string agentType)");
 
 REGISTER_EDITOR_AND_SCRIPT_COMMAND(Private_EditorCommands::PyRegenerateMNMAll, ai, regenerate_agent_type_all,
-	CCommandDescription(gettext("Regenerate All Layers")));
+	CCommandDescription("Regenerate All Layers"));
 
 REGISTER_EDITOR_AND_SCRIPT_COMMAND(Private_EditorCommands::PyNavigationShowAreas, ai, show_navigation_areas,
-	CCommandDescription(gettext("Show Navigation Areas")));
+	CCommandDescription("Show Navigation Areas"));
 REGISTER_EDITOR_COMMAND_ICON(ai, show_navigation_areas, "icons:common/ai_show_navigation_areas.ico");
 
 REGISTER_EDITOR_AND_SCRIPT_COMMAND(Private_EditorCommands::PyVisualizeNavigationAccessibility, ai, visualize_navigation_accessibility,
-	CCommandDescription(gettext("Visualize Navigation Accessibility")));
+	CCommandDescription("Visualize Navigation Accessibility"));
 REGISTER_EDITOR_COMMAND_ICON(ai, visualize_navigation_accessibility, "icons:common/ai_visualize_navigation_accessibility.ico");
 
 REGISTER_EDITOR_AND_SCRIPT_COMMAND(Private_EditorCommands::PySetNavigationUpdateContinuous, ai, set_navigation_update_continuous,
-	CCommandDescription(gettext("Sets navigation update type to continuous")));
-REGISTER_EDITOR_COMMAND_TEXT(ai, set_navigation_update_continuous, gettext("Continuous"));
+	CCommandDescription("Sets navigation update type to continuous"));
+REGISTER_EDITOR_COMMAND_TEXT(ai, set_navigation_update_continuous, "Continuous");
 
 REGISTER_EDITOR_AND_SCRIPT_COMMAND(Private_EditorCommands::PySetNavigationUpdateAfterChange, ai, set_navigation_update_afterchange,
-	CCommandDescription(gettext("Sets navigation update type to after change")));
-REGISTER_EDITOR_COMMAND_TEXT(ai, set_navigation_update_afterchange, gettext("After Change"));
+	CCommandDescription("Sets navigation update type to after change"));
+REGISTER_EDITOR_COMMAND_TEXT(ai, set_navigation_update_afterchange, "After Change");
 
 REGISTER_EDITOR_AND_SCRIPT_COMMAND(Private_EditorCommands::PySetNavigationUpdateDisabled, ai, set_navigation_update_disabled,
-	CCommandDescription(gettext("Sets navigation update type to disabled")));
-REGISTER_EDITOR_COMMAND_TEXT(ai, set_navigation_update_disabled, gettext("Disabled"));
+	CCommandDescription("Sets navigation update type to disabled"));
+REGISTER_EDITOR_COMMAND_TEXT(ai, set_navigation_update_disabled, "Disabled");
 
 REGISTER_PYTHON_COMMAND_WITH_EXAMPLE(Private_EditorCommands::PySetNavigationUpdate, ai, set_navigation_update_type,
-	gettext("Sets the navigation update type (0 = continuous, 1 = afterChange, 2 = disabled)"),
+	"Sets the navigation update type (0 = continuous, 1 = afterChange, 2 = disabled)",
 	"ai.set_navigation_update_type(int updateType)");
 
 #undef REGISTER_AGENT_TYPE_COMMAND

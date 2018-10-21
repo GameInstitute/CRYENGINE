@@ -17,14 +17,14 @@ YASLI_ENUM_END()
 //////////////////////////////////////////////////////////////////////////
 bool SGizmoPreferences::Serialize(yasli::Archive& ar)
 {
-	ar.openBlock("axisGizmo", "Axis Gizmo");
-	ar(axisGizmoSize, "axisGizmoSize", "Axis Gizmo Size");
-	ar(axisGizmoText, "axisGizmoText", "Text Labels on Axis Gizmo");
-	ar(rotationInteraction, "axisInteraction", "Interaction for Rotation Gizmo");
+	ar.openBlock("axisGizmo", gettext("Axis Gizmo"));
+	ar(axisGizmoSize, "axisGizmoSize", gettext("Axis Gizmo Size"));
+	ar(axisGizmoText, "axisGizmoText", gettext("Text Labels on Axis Gizmo"));
+	ar(rotationInteraction, "axisInteraction", gettext("Interaction for Rotation Gizmo"));
 	ar.closeBlock();
 
-	ar.openBlock("helpers", "Helpers");
-	ar(helperScale, "helperScale", "Scale");
+	ar.openBlock("helpers", gettext("Helpers"));
+	ar(helperScale, "helperScale", gettext("Scale"));
 	ar.closeBlock();
 
 	return true;

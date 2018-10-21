@@ -25,8 +25,8 @@ struct SDeepSelectionPreferences : public SPreferencePage
 
 	virtual bool Serialize(yasli::Archive& ar) override
 	{
-		ar.openBlock("deepSelection", "Deep Selection");
-		ar(yasli::Range(deepSelectionRange, 0.0f, 1000.0f), "deepSelectionRange", "Range");
+		ar.openBlock("deepSelection", gettext("Deep Selection"));
+		ar(yasli::Range(deepSelectionRange, 0.0f, 1000.0f), "deepSelectionRange", gettext("Range"));
 		ar.closeBlock();
 
 		return true;
