@@ -299,7 +299,7 @@ CVariablesWidget::CVariablesWidget(QString label, QWidget* pParent)
 	m_pFilter = new QSearchBox(nullptr);
 	m_pFilter->EnableContinuousSearch(true);
 	m_pFilter->setMaximumSize(16777215, 20);
-	m_pFilter->setPlaceholderText("Search");
+	m_pFilter->setPlaceholderText(tr("Search"));
 
 	pLayout->addWidget(pToolBar);
 	pLayout->addWidget(m_pFilter);

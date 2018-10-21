@@ -1950,13 +1950,13 @@ void CEditorMainFrame::InitMenus()
 	{
 		// Add entries
 		QString name=QObject::tr("Keyboard Shortcuts");
-		QString cmd = QString("general.open_pane '%1'").arg(name);
+		QString cmd = QString("general.open_pane '%1'").arg("Keyboard Shortcuts");
 		QCommandAction* pKeyboardShortcuts = new QCommandAction(name.append("..."), (const char*)cmd.toLocal8Bit(), editMenu);
 		pKeyboardShortcuts->setIcon(CryIcon("icons:Tools/Keyboard_Shortcuts.ico"));
 		editMenu->addAction(pKeyboardShortcuts);
 
 		name = QObject::tr("Preferences");
-		cmd = QString("general.open_pane '%1'").arg(name);
+		cmd = QString("general.open_pane '%1'").arg("Preferences");
 		editMenu->addAction(new QCommandAction(name.append("..."), (const char*)cmd.toLocal8Bit(), editMenu));
 
 		// Search for the action (separator) right after redo
@@ -1975,7 +1975,7 @@ void CEditorMainFrame::InitMenus()
 		}
 
 		name = QObject::tr("Undo History");
-		cmd = QString("general.open_pane '%1'").arg(name);
+		cmd = QString("general.open_pane '%1'").arg("Undo History");
 		QAction* pUndoHistory = new QCommandAction(name, (const char*)cmd.toLocal8Bit(), editMenu);
 		pUndoHistory->setIcon(CryIcon("icons:General/History_Undo_List.ico"));
 		editMenu->insertAction(pAfterRedo, pUndoHistory);
@@ -2011,21 +2011,21 @@ void CEditorMainFrame::InitMenus()
 
 		pHelpMenu->addSeparator();
 
-		QString name = "Console Commands";
-		QString cmd = QString("general.open_pane '%1'").arg(name);
+		QString name = QObject::tr("Console Commands");
+		QString cmd = QString("general.open_pane '%1'").arg("Console Commands");
 		QAction* pAction = new QCommandAction(name, static_cast<const char*>(cmd.toLocal8Bit()), pHelpMenu);
 		pAction->setIcon(CryIcon("icons:ObjectTypes/Console_Commands.ico"));
 		pHelpMenu->addAction(pAction);
 
-		name = "Console Variables";
-		cmd = QString("general.open_pane '%1'").arg(name);
+		name = QObject::tr("Console Variables");
+		cmd = QString("general.open_pane '%1'").arg("Console Variables");
 		pAction = new QCommandAction(name, static_cast<const char*>(cmd.toLocal8Bit()), pHelpMenu);
 		pAction->setIcon(CryIcon("icons:ObjectTypes/Console_Variables.ico"));
 		pHelpMenu->addAction(pAction);
 
 		pHelpMenu->addSeparator();
 
-		name = "About Sandbox...";
+		name = QObject::tr("About Sandbox...");
 		pAction = new QAction(name, pHelpMenu);
 		pAction->setProperty("menurole", QVariant(QApplication::translate("MainWindow", "AboutRole", 0)));
 		connect(pAction, &QAction::triggered, [this]()

@@ -19,13 +19,13 @@ CAboutDialog::CAboutDialog()
 	SetVersion(m_version);
 
 	m_miscInfoLabel = new QLabel();
-	m_miscInfoLabel->setText(tr("CRYENGINE(R) Sandbox(TM) Editor\nCopyright(c) 2018, Crytek GmbH\n\nCrytek, Crytek logo, CRYENGINE, Sandbox are trademarks of Crytek.\n"));
+	m_miscInfoLabel->setText(gettext("CRYENGINE(R) Sandbox(TM) Editor\nCopyright(c) 2018, Crytek GmbH\n\nCrytek, Crytek logo, CRYENGINE, Sandbox are trademarks of Crytek.\n"));
 
 	QPixmap* logo = new QPixmap(":/about.png");
 	QLabel* logoImg = new QLabel();
 	logoImg->setPixmap(*logo);
 
-	QPushButton* closeBtn = new QPushButton(tr("&Close"));
+	QPushButton* closeBtn = new QPushButton(gettext("&Close"));
 
 	connect(closeBtn, &QPushButton::clicked, [this]()
 	{
@@ -52,7 +52,7 @@ CAboutDialog::~CAboutDialog()
 void CAboutDialog::SetVersion(const Version& version)
 {
 	char versionText[256];
-	cry_sprintf(versionText, "Version %d.%d.%d - Build %d", version[3], version[2], version[1], version[0]);
+	cry_sprintf(versionText, gettext("Version %d.%d.%d - Build %d"), version[3], version[2], version[1], version[0]);
 	m_versionText->setText(versionText);
 }
 

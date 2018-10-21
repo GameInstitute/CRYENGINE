@@ -4119,11 +4119,11 @@ void CBaseObject::SetMaterialByName(const char* mtlName)
 //////////////////////////////////////////////////////////////////////////
 void CBaseObject::CreateInspectorWidgets(CInspectorWidgetCreator& creator)
 {
-	creator.AddPropertyTree<CBaseObject>("General", [](CBaseObject* pObject, Serialization::IArchive& ar, bool bMultiEdit)
+	creator.AddPropertyTree<CBaseObject>(gettext("General"), [](CBaseObject* pObject, Serialization::IArchive& ar, bool bMultiEdit)
 	{
 		pObject->SerializeGeneralProperties(ar, bMultiEdit);
 	});
-	creator.AddPropertyTree<CBaseObject>("Transform", [](CBaseObject* pObject, Serialization::IArchive& ar, bool bMultiEdit)
+	creator.AddPropertyTree<CBaseObject>(gettext("Transform"), [](CBaseObject* pObject, Serialization::IArchive& ar, bool bMultiEdit)
 	{
 		pObject->SerializeTransformProperties(ar);
 	});
@@ -4133,16 +4133,16 @@ void CBaseObject::CreateInspectorWidgets(CInspectorWidgetCreator& creator)
 void CBaseObject::SerializeGeneralProperties(Serialization::IArchive& ar, bool bMultiEdit)
 {
 	string typeDescr = GetTypeDescription();
-	ar(typeDescr, "type_name", "!Type");
+	ar(typeDescr, "type_name", gettext("!Type"));
 	string name = (const char*)m_name;
-	ar(name, "name", "Name");
+	ar(name, "name", gettext("Name"));
 
 	int abgr = m_color;
 	ColorB color = ColorB((uint32)abgr);
-	ar(color, "color", "Color");
+	ar(color, "color", gettext("Color"));
 
 	string layer = (const char*)m_layer->GetFullName();
-	ar(Serialization::LevelLayerPicker(layer), "layer", "Layer");
+	ar(Serialization::LevelLayerPicker(layer), "layer", gettext("Layer"));
 
 	string mtl = GetMaterialName();
 	bool bHadCustomMaterial = mtl.size() > 0;
@@ -4154,7 +4154,7 @@ void CBaseObject::SerializeGeneralProperties(Serialization::IArchive& ar, bool b
 		}
 	}
 
-	ar(Serialization::MaterialPicker(mtl), "mtl", "Material");
+	ar(Serialization::MaterialPicker(mtl), "mtl", gettext("Material"));
 	// Special case: Clear the custom material if it is identical to the default render one
 	if (!bHadCustomMaterial)
 	{
@@ -4168,7 +4168,7 @@ void CBaseObject::SerializeGeneralProperties(Serialization::IArchive& ar, bool b
 	}
 
 	ESystemConfigSpec minSpec = (ESystemConfigSpec)m_nMinSpec;
-	ar(minSpec, "MinSpec", "Minimum Graphics");
+	ar(minSpec, "MinSpec", gettext("Minimum Graphics"));
 
 	if (ar.isInput())
 	{
@@ -4237,9 +4237,9 @@ void CBaseObject::SerializeTransformProperties(Serialization::IArchive& ar)
 	Quat rot = GetRotation();
 	Vec3 scl = GetScale();
 
-	ar(Serialization::SPosition(pos), "xform.pos", "Position");
-	ar(Serialization::SRotation(rot), "xform.rot", "Rotation");
-	ar(Serialization::SUniformScale(scl), "xform.scl", "Scale");
+	ar(Serialization::SPosition(pos), "xform.pos", gettext("Position"));
+	ar(Serialization::SRotation(rot), "xform.rot", gettext("Rotation"));
+	ar(Serialization::SUniformScale(scl), "xform.scl", gettext("Scale"));
 	if (ar.isInput())
 	{
 		SetPos(pos);

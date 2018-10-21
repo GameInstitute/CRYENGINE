@@ -126,14 +126,14 @@ struct SAINavigationPreferences : public SPreferencePage
 			agentTypeList.push_back(szCurrentAgentName);
 		}
 
-		ar.openBlock("general", "General");
+		ar.openBlock("general", gettext("General"));
 		ar(m_navigationShowAreas, "navigationShowAreas", "");
 		ar(m_visualizeNavigationAccessibility, "visualizeNavigationAccessibility", "");
 		ar(m_navigationUpdateType, "navigationUpdateType", "");
 		ar(m_navigationDebugDisplay, "navigationDebugDisplay", "");
-		ar(m_navigationRegenDisabledOnLevelLoad, "navigationRegenDisabledOnLevelLoad", "Disable Navigation Regeneration on Level Load");
-		ar(m_initialNavigationAreaHeightOffset, "initNavAreaHeightOffset", "Initial Navigation Area Height Offset");
-		ar.doc("Initial navigation area height offset from the terrain when the area is created.");
+		ar(m_navigationRegenDisabledOnLevelLoad, "navigationRegenDisabledOnLevelLoad", gettext("Disable Navigation Regeneration on Level Load"));
+		ar(m_initialNavigationAreaHeightOffset, "initNavAreaHeightOffset", gettext("Initial Navigation Area Height Offset"));
+		ar.doc(gettext("Initial navigation area height offset from the terrain when the area is created."));
 		
 		if (agentTypeCount > 0)
 		{

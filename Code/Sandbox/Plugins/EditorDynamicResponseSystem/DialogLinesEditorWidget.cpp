@@ -139,11 +139,11 @@ CDialogLinesEditorWidget::CDialogLinesEditorWidget(QWidget* pParent)
 
 	m_pFilterLineEdit = new QLineEdit(this);
 	m_pFilterLineEdit->setPlaceholderText(tr("Search"));
-	QPushButton* pImportButton = new QPushButton("Import .tsv");
-	QPushButton* pExportButton = new QPushButton("Export .tsv");
-	QPushButton* pSaveButton = new QPushButton("Save");
-	QPushButton* pAutoSaveToggleButton = new QPushButton("AutoSave");
-	QPushButton* pClearAllButton = new QPushButton("Clear all");
+	QPushButton* pImportButton = new QPushButton(tr("Import .tsv"));
+	QPushButton* pExportButton = new QPushButton(tr("Export .tsv"));
+	QPushButton* pSaveButton = new QPushButton(tr("Save"));
+	QPushButton* pAutoSaveToggleButton = new QPushButton(tr("AutoSave"));
+	QPushButton* pClearAllButton = new QPushButton(tr("Clear all"));
 	pAutoSaveToggleButton->setCheckable(true);
 
 	auto pHLayout = new QHBoxLayout();

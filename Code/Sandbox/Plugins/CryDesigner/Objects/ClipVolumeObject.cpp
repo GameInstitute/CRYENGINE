@@ -405,9 +405,9 @@ void ClipVolumeObject::CreateInspectorWidgets(CInspectorWidgetCreator& creator)
 		pObject->m_pVarObject->SerializeVariable(&pObject->mv_ignoreOutdoorAO, ar);
 		pObject->m_pVarObject->SerializeVariable(&pObject->mv_ratioViewDist, ar);
 
-		if (ar.openBlock("operators", "Operators"))
+		if (ar.openBlock("operators", gettext("Operators")))
 		{
-			if (ar.openBlock("volume", "Volume"))
+			if (ar.openBlock("volume", gettext("Volume")))
 			{
 				ar(Serialization::ActionButton([=]
 				{
@@ -415,9 +415,9 @@ void ClipVolumeObject::CreateInspectorWidgets(CInspectorWidgetCreator& creator)
 
 					GetIEditor()->SetEditTool("EditTool.ClipVolumeTool", false);
 				}),
-					"edit", "^Edit");
+					"edit", gettext("^Edit"));
 
-				ar(Serialization::ActionButton(std::bind(&ClipVolumeObject::LoadFromCGF, pObject)), "load_cgf", "^Load CGF");
+				ar(Serialization::ActionButton(std::bind(&ClipVolumeObject::LoadFromCGF, pObject)), "load_cgf", gettext("^Load CGF"));
 				ar.closeBlock();
 			}
 			ar.closeBlock();

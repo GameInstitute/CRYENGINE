@@ -405,13 +405,13 @@ void DesignerObject::CreateInspectorWidgets(CInspectorWidgetCreator& creator)
 	{
 		pObject->m_EngineFlags.Serialize(ar);
 
-		if (ar.openBlock("Edit", "<Edit"))
+		if (ar.openBlock("Edit", gettext("<Edit")))
 		{
 			ar(Serialization::ActionButton([=]
 			{
 				GetIEditor()->ExecuteCommand("general.open_pane 'Modeling'");
 			})
-				, "edit", "^Edit");
+				, "edit", gettext("^Edit"));
 			ar.closeBlock();
 		}
 

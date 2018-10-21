@@ -384,14 +384,14 @@ float CEntityObject::m_helperScale = 1;
 
 void CEntityLink::Serialize(Serialization::IArchive& ar)
 {
-	ar(name, "name", "Name");
+	ar(name, "name", gettext("Name"));
 
 	string targetName;
 	if (CEntityObject* pTarget = GetTarget())
 		targetName = pTarget->GetName();
 
 	Serialization::EntityTarget target(targetId, targetName);
-	ar(target, "targetName", "!Target");
+	ar(target, "targetName", gettext("!Target"));
 
 	if (ar.isInput())
 	{
@@ -1284,13 +1284,13 @@ void CEntityObject::SerializeLuaProperties(Serialization::IArchive& ar, bool bMu
 		{
 			string script = GetScript()->GetFile();
 
-			if (!script.IsEmpty() && ar.openBlock("Script", "Script"))
+			if (!script.IsEmpty() && ar.openBlock("Script", gettext("Script")))
 			{
-				ar(script, "scriptname", "!Path");
-				if (ar.openBlock("script_buttons", "<Script"))
+				ar(script, "scriptname", gettext("!Path"));
+				if (ar.openBlock("script_buttons", gettext("<Script")))
 				{
-					ar(Serialization::ActionButton(std::bind(&CEntityObject::OnEditScript, this)), "edit_script", "^Edit");
-					ar(Serialization::ActionButton(std::bind(&CEntityObject::OnMenuReloadScripts, this)), "reload_script", "^Reload");
+					ar(Serialization::ActionButton(std::bind(&CEntityObject::OnEditScript, this)), "edit_script", gettext("^Edit"));
+					ar(Serialization::ActionButton(std::bind(&CEntityObject::OnMenuReloadScripts, this)), "reload_script", gettext("^Reload"));
 					ar.closeBlock();
 				}
 				ar.closeBlock();
@@ -1307,11 +1307,11 @@ void CEntityObject::SerializeLuaProperties(Serialization::IArchive& ar, bool bMu
 
 void CEntityObject::SerializeFlowgraph(Serialization::IArchive& ar, bool bMultiEdit)
 {
-	if (ar.openBlock("flowgraph_operators", "<Flowgraph"))
+	if (ar.openBlock("flowgraph_operators", gettext("<Flowgraph")))
 	{
-		ar(Serialization::ActionButton(std::bind(&CEntityObject::OnBnClickedOpenFlowGraph, this)), "open_flowgraph", "^Open");
-		ar(Serialization::ActionButton(std::bind(&CEntityObject::OnBnClickedListFlowGraphs, this)), "list_flowgraph", "^List");
-		ar(Serialization::ActionButton(std::bind(&CEntityObject::OnBnClickedRemoveFlowGraph, this)), "remove_flowgraph", m_pFlowGraph ? "^Remove" : "^!Remove");
+		ar(Serialization::ActionButton(std::bind(&CEntityObject::OnBnClickedOpenFlowGraph, this)), "open_flowgraph", gettext("^Open"));
+		ar(Serialization::ActionButton(std::bind(&CEntityObject::OnBnClickedListFlowGraphs, this)), "list_flowgraph", gettext("^List"));
+		ar(Serialization::ActionButton(std::bind(&CEntityObject::OnBnClickedRemoveFlowGraph, this)), "remove_flowgraph", m_pFlowGraph ? gettext("^Remove") : gettext("^!Remove"));
 		ar.closeBlock();
 	}
 }
@@ -1321,8 +1321,8 @@ void CEntityObject::SerializeArchetype(Serialization::IArchive& ar, bool bMultiE
 	if (m_prototype != nullptr)
 	{
 		const string archetype = m_prototype->GetFullName();
-		ar(archetype, "entity_archetype_name", "!Name");
-		ar(Serialization::ActionButton(std::bind(&CEntityObject::OnOpenArchetype, this)), "entity_archetype_open", "^Open");
+		ar(archetype, "entity_archetype_name", gettext("!Name"));
+		ar(Serialization::ActionButton(std::bind(&CEntityObject::OnOpenArchetype, this)), "entity_archetype_open", gettext("^Open"));
 	}
 }
 
@@ -1331,16 +1331,16 @@ void CEntityObject::SerializeLinks(Serialization::IArchive& ar, bool bMultiEdit)
 	using namespace Private_EntityObject;
 	if (ar.isEdit())
 	{
-		if (ar.openBlock("linktools", "Link Tools"))
+		if (ar.openBlock("linktools", gettext("Link Tools")))
 		{
 			Serialization::SEditToolButton pickToolButton("");
 			pickToolButton.SetToolClass(RUNTIME_CLASS(EntityLinkTool), nullptr, this);
 
-			ar(pickToolButton, "picker", "^Pick");
+			ar(pickToolButton, "picker", gettext("^Pick"));
 			ar(Serialization::ActionButton([ = ] {
 				CUndo undo("Clear entity links");
 				RemoveAllEntityLinks();
-			}), "picker", "^Clear");
+			}), "picker", gettext("^Clear"));
 
 			ar.closeBlock();
 		}
@@ -1349,7 +1349,7 @@ void CEntityObject::SerializeLinks(Serialization::IArchive& ar, bool bMultiEdit)
 	// Make a copy to determine if something changed
 	auto links = m_links;
 
-	ar(links, "links_array", "Links");
+	ar(links, "links_array", gettext("Links"));
 	if (ar.isInput())
 	{
 		bool changed = false;

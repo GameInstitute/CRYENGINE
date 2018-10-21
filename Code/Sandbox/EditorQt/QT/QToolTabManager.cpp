@@ -107,22 +107,22 @@ void PySaveLayoutAs()
 }
 
 REGISTER_PYTHON_COMMAND_WITH_EXAMPLE(PyLoadLayoutFromFile, layout, load,
-                                     "Loads a layout from file.",
+	gettext("Loads a layout from file."),
                                      "layout.load(str path)");
 
 REGISTER_PYTHON_COMMAND_WITH_EXAMPLE(PySaveLayoutToFile, layout, save,
-                                     "Saves current layout to a file.",
+	gettext("Saves current layout to a file."),
                                      "layout.save(str absolutePath)");
 
 REGISTER_PYTHON_COMMAND_WITH_EXAMPLE(PyResetLayout, layout, reset,
-                                     "Reset Layout",
+	gettext("Reset Layout"),
                                      "");
 
 REGISTER_PYTHON_COMMAND_WITH_EXAMPLE(PyLoadLayoutDlg, layout, load_dlg,
-                                     "Load Layout...", "");
+	gettext("Load Layout..."), "");
 
 REGISTER_PYTHON_COMMAND_WITH_EXAMPLE(PySaveLayoutAs, layout, save_as,
-                                     "Save Layout As...", "");
+	gettext("Save Layout As..."), "");
 
 //////////////////////////////////////////////////////////////////////////
 CTabPaneManager::CTabPaneManager(QWidget* const pParent)

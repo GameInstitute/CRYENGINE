@@ -2283,6 +2283,6 @@ void ExportSvogiData()
 }
 
 REGISTER_PYTHON_COMMAND_WITH_EXAMPLE(Private_GameExporter::ExportSvogiData, general, export_svogi_data,
-                                     "Export SVOGI Data",
+                                     gettext("Export SVOGI Data"),
                                      "general.export_svogi_data()");
 

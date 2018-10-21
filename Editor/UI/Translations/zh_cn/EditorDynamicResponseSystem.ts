@@ -48,6 +48,31 @@
         <source>Search</source>
         <translation>搜索</translation>
     </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/EditorDynamicResponseSystem/DialogLinesEditorWidget.cpp" line="142"/>
+        <source>Import .tsv</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/EditorDynamicResponseSystem/DialogLinesEditorWidget.cpp" line="143"/>
+        <source>Export .tsv</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/EditorDynamicResponseSystem/DialogLinesEditorWidget.cpp" line="144"/>
+        <source>Save</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/EditorDynamicResponseSystem/DialogLinesEditorWidget.cpp" line="145"/>
+        <source>AutoSave</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/EditorDynamicResponseSystem/DialogLinesEditorWidget.cpp" line="146"/>
+        <source>Clear all</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CPropertyTreeWithOptions</name>

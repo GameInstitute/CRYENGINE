@@ -1976,14 +1976,14 @@ namespace
 }
 
 REGISTER_EDITOR_AND_SCRIPT_COMMAND(PyToggleCameraTerrainCollisions, camera, toggle_terrain_collisions,
-	CCommandDescription("Camera Terrain Collisions"));
-REGISTER_EDITOR_UI_COMMAND_DESC(camera, toggle_terrain_collisions, "Camera Terrain Collisions", "Q", "")
+	CCommandDescription(gettext("Camera Terrain Collisions")));
+REGISTER_EDITOR_UI_COMMAND_DESC(camera, toggle_terrain_collisions, gettext("Camera Terrain Collisions"), "Q", "")
 
 REGISTER_PYTHON_COMMAND_WITH_EXAMPLE(PyToggleCameraObjectCollisions, camera, toggle_object_collisions,
-	"Camera Object Collisions",
+	gettext("Camera Object Collisions"),
 	"camera.toggle_object_collisions()");
 
 REGISTER_EDITOR_AND_SCRIPT_COMMAND(PyToggleCameraSpeedHeightRelative, camera, toggle_speed_height_relative,
-	CCommandDescription("Camera Speed Height-Relative"));
-REGISTER_EDITOR_UI_COMMAND_DESC(camera, toggle_speed_height_relative, "Camera Speed Height-Relative", "Z", "")
+	CCommandDescription(gettext("Camera Speed Height-Relative")));
+REGISTER_EDITOR_UI_COMMAND_DESC(camera, toggle_speed_height_relative, gettext("Camera Speed Height-Relative"), "Z", "")
 

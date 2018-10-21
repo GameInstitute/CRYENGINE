@@ -77,58 +77,58 @@ bool SViewportGeneralPreferences::Serialize(yasli::Archive& ar)
 	                                               std::max(resolutionOptions.find(currResString), 0));
 	float defaultFOVDeg = RAD2DEG(defaultFOV);
 
-	ar.openBlock("general", "General");
-	ar(applyConfigSpec, "applyConfigSpec", "Hide objects by config spec");
-	ar(sync2DViews, "sync2DViews", "Synchronize 2D Viewports");
-	ar(defaultFOVDeg, "defaultFOV", "Perspective View FOV"); // IVariable::DT_ANGLE
-	ar(defaultAspectRatio, "defaultAspectRatio", "Perspective View Aspect Ratio");
-	ar(enableContextMenu, "enableContextMenu", "Enable Right-Click Context Menu");
+	ar.openBlock("general", gettext("General"));
+	ar(applyConfigSpec, "applyConfigSpec", gettext("Hide objects by config spec"));
+	ar(sync2DViews, "sync2DViews", gettext("Synchronize 2D Viewports"));
+	ar(defaultFOVDeg, "defaultFOV", gettext("Perspective View FOV")); // IVariable::DT_ANGLE
+	ar(defaultAspectRatio, "defaultAspectRatio", gettext("Perspective View Aspect Ratio"));
+	ar(enableContextMenu, "enableContextMenu", gettext("Enable Right-Click Context Menu"));
 	ar.closeBlock();
 
-	ar.openBlock("display", "Display");
-	ar(showSafeFrame, "showSafeFrame", "Show 4:3 Aspect Ratio Frame");
-	ar(hideMouseCursorWhenCaptured, "hideMouseCursorWhenCaptured", "Hide Mouse Cursor When Captured");
-	ar(dragSquareSize, "dragSquareSize", "Drag Square Size");
+	ar.openBlock("display", gettext("Display"));
+	ar(showSafeFrame, "showSafeFrame", gettext("Show 4:3 Aspect Ratio Frame"));
+	ar(hideMouseCursorWhenCaptured, "hideMouseCursorWhenCaptured", gettext("Hide Mouse Cursor When Captured"));
+	ar(dragSquareSize, "dragSquareSize", gettext("Drag Square Size"));
 
-	ar(displayLinks, "displayLinks", "Display Object Links");
-	ar(displayTracks, "displayTracks", "Display Animation Tracks");
-	ar(alwaysShowRadiuses, "alwaysShowRadiuses", "Always Show Radiuses");
-	ar(alwaysShowPrefabBox, "alwaysShowPrefabBox", "Always Show Prefab Bounds");
-	ar(showBBoxes, "showBBoxes", "Show Bounding Boxes");
-	ar(drawEntityLabels, "drawEntityLabels", "Always Draw Entity Labels");
-	ar(showTriggerBounds, "showTriggerBounds", "Always Show Trigger Bounds");
-	ar(showIcons, "showIcons", "Show Object Icons");
+	ar(displayLinks, "displayLinks", gettext("Display Object Links"));
+	ar(displayTracks, "displayTracks", gettext("Display Animation Tracks"));
+	ar(alwaysShowRadiuses, "alwaysShowRadiuses", gettext("Always Show Radiuses"));
+	ar(alwaysShowPrefabBox, "alwaysShowPrefabBox", gettext("Always Show Prefab Bounds"));
+	ar(showBBoxes, "showBBoxes", gettext("Show Bounding Boxes"));
+	ar(drawEntityLabels, "drawEntityLabels", gettext("Always Draw Entity Labels"));
+	ar(showTriggerBounds, "showTriggerBounds", gettext("Always Show Trigger Bounds"));
+	ar(showIcons, "showIcons", gettext("Show Object Icons"));
 
-	ar(bHideDistancedHelpers, "hideDistancedHelpers", "Hide distanced helpers");
+	ar(bHideDistancedHelpers, "hideDistancedHelpers", gettext("Hide distanced helpers"));
 	if (bHideDistancedHelpers)
 	{
-		ar(yasli::Range(objectHelperMaxDistDisplay, 0.0f, 500.0f), "objectHelperMaxDistDisplay", "Display helpers up to given distance");
+		ar(yasli::Range(objectHelperMaxDistDisplay, 0.0f, 500.0f), "objectHelperMaxDistDisplay", gettext("Display helpers up to given distance"));
 	}
 
-	ar(distanceScaleIcons, "distanceScaleIcons", "Scale object icons with distance");
+	ar(distanceScaleIcons, "distanceScaleIcons", gettext("Scale object icons with distance"));
 	if (distanceScaleIcons)
 	{
-		ar(yasli::Range(objectIconsScaleThreshold, 0.0f, 500.0f), "objectIconsScaleThreshold", "Threshold for distance scaling");
+		ar(yasli::Range(objectIconsScaleThreshold, 0.0f, 500.0f), "objectIconsScaleThreshold", gettext("Threshold for distance scaling"));
 	}
 
-	ar(objectIconsOnTop, "distanceScaleIconsThreshold", "Show object icons on top of objects");
-	ar(yasli::Range(selectionHelperDisplayThreshold, 0.0f, 500.0f), "selectionHelperDisplayThreshold", "Threshold for showing selection helpers");
-	ar(showFrozenHelpers, "showFrozenHelpers", "Show Helpers of Frozen Objects");
-	ar(fillSelectedShapes, "fillSelectedShapes", "Fill Selected Shapes");
-	ar(showGridGuide, "showGridGuide", "Show Snapping Grid Guide");
-	ar(displayDimension, "displayDimension", "Display dimension figures");
-	ar(displaySelectedObjectOrientation, "displaySelectedObjectOrientation", "Display Selected Object Orientation");
-	ar(toolsRenderUpdateMutualExclusive, "toolsRenderUpdateMutualExclusive", "Tools Render Update Mutual Exclusive");
+	ar(objectIconsOnTop, "distanceScaleIconsThreshold", gettext("Show object icons on top of objects"));
+	ar(yasli::Range(selectionHelperDisplayThreshold, 0.0f, 500.0f), "selectionHelperDisplayThreshold", gettext("Threshold for showing selection helpers"));
+	ar(showFrozenHelpers, "showFrozenHelpers", gettext("Show Helpers of Frozen Objects"));
+	ar(fillSelectedShapes, "fillSelectedShapes", gettext("Fill Selected Shapes"));
+	ar(showGridGuide, "showGridGuide", gettext("Show Snapping Grid Guide"));
+	ar(displayDimension, "displayDimension", gettext("Display dimension figures"));
+	ar(displaySelectedObjectOrientation, "displaySelectedObjectOrientation", gettext("Display Selected Object Orientation"));
+	ar(toolsRenderUpdateMutualExclusive, "toolsRenderUpdateMutualExclusive", gettext("Tools Render Update Mutual Exclusive"));
 	ar.closeBlock();
 
-	ar.openBlock("mapViewport", "Map Viewport");
-	ar(mapViewportSwapXY, "mapViewportSwapXY", "Swap X/Y Axis");
-	ar(resolutionValue, "mapViewportResolution", "Map Texture Resolution");
+	ar.openBlock("mapViewport", gettext("Map Viewport"));
+	ar(mapViewportSwapXY, "mapViewportSwapXY", gettext("Swap X/Y Axis"));
+	ar(resolutionValue, "mapViewportResolution", gettext("Map Texture Resolution"));
 	ar.closeBlock();
 
-	ar.openBlock("textLabels", "Text Labels");
-	ar(displayLabels, "displayLabels", "Enabled");
-	ar(yasli::Range(labelsDistance, 0.0f, 1000.0f), "labelsDistance", "Distance");
+	ar.openBlock("textLabels", gettext("Text Labels"));
+	ar(displayLabels, "displayLabels", gettext("Enabled"));
+	ar(yasli::Range(labelsDistance, 0.0f, 1000.0f), "labelsDistance", gettext("Distance"));
 	ar.closeBlock();
 
 	if (ar.isInput())
@@ -169,34 +169,34 @@ SViewportDebugPreferences::SViewportDebugPreferences()
 
 bool SViewportDebugPreferences::Serialize(yasli::Archive& ar)
 {
-	ar.openBlock("debugHighlight", "Debug Highlight");
+	ar.openBlock("debugHighlight", gettext("Debug Highlight"));
 	bool dbgHighlightBreakable = debugFlags & DBG_HIGHLIGHT_BREAKABLE;
 	bool dbgHighlightMissingSurfaceType = debugFlags & DBG_HIGHLIGHT_MISSING_SURFACE_TYPE;
-	ar(dbgHighlightBreakable, "highlightBreakable", "Breakable Materials");
-	ar(dbgHighlightMissingSurfaceType, "highlightMissingSurfaceType", "Missing Surface Types");
+	ar(dbgHighlightBreakable, "highlightBreakable", gettext("Breakable Materials"));
+	ar(dbgHighlightMissingSurfaceType, "highlightMissingSurfaceType", gettext("Missing Surface Types"));
 	ar.closeBlock();
 
-	ar.openBlock("profiling", "Profiling");
-	ar(showMeshStatsOnMouseOver, "showMeshStatsOnMouseOver", "Show Mesh Statistics on Mouse Over");
+	ar.openBlock("profiling", gettext("Profiling"));
+	ar(showMeshStatsOnMouseOver, "showMeshStatsOnMouseOver", gettext("Show Mesh Statistics on Mouse Over"));
 	ar.closeBlock();
 
-	ar.openBlock("warnings", "Warnings");
-	ar(yasli::Range(warningIconsDrawDistance, 0.1f, 10000.f), "warningIconsDrawDistance", "Warning Icons Draw Distance");
-	ar(showScaleWarnings, "showScaleWarnings", "Show Scale Warnings");
-	ar(showRotationWarnings, "showRotationWarnings", "Show Rotation Warnings");
+	ar.openBlock("warnings", gettext("Warnings"));
+	ar(yasli::Range(warningIconsDrawDistance, 0.1f, 10000.f), "warningIconsDrawDistance", gettext("Warning Icons Draw Distance"));
+	ar(showScaleWarnings, "showScaleWarnings", gettext("Show Scale Warnings"));
+	ar(showRotationWarnings, "showRotationWarnings", gettext("Show Rotation Warnings"));
 	ar.closeBlock();
 
-	ar.openBlock("helper", "Debug Helper");
-	ar(showEntityObjectHelper, "showEntityObjectHelper", "Show Entity Object Helper");
-	ar(showAreaObjectHelper, "showAreaObjectHelper", "Show Area Helper");
-	ar(showShapeObjectHelper, "showShapeObjectHelper", "Show Shape Helper");
-	ar(showBrushObjectHelper, "showBrushObjectHelper", "Show Brush Helper");
-	ar(showDecalObjectHelper, "showDecalObjectHelper", "Show Decal Helper");
-	ar(showPrefabObjectHelper, "showPrefabObjectHelper", "Show Prefab Helper");
-	ar(showPrefabSubObjectHelper, "showPrefabChildrenObjectHelper", "Show Prefab Children Helper");
-	ar(showRoadObjectHelper, "showRoadObjectHelper", "Show Road Helper");
-	ar(showGroupObjectHelper, "showRoadObjectHelper", "Show Group Helper");
-	ar(showEnviromentProbeObjectHelper, "showEnviromentProbeObjectHelper", "Show Environment Probe Helper");
+	ar.openBlock("helper", gettext("Debug Helper"));
+	ar(showEntityObjectHelper, "showEntityObjectHelper", gettext("Show Entity Object Helper"));
+	ar(showAreaObjectHelper, "showAreaObjectHelper", gettext("Show Area Helper"));
+	ar(showShapeObjectHelper, "showShapeObjectHelper", gettext("Show Shape Helper"));
+	ar(showBrushObjectHelper, "showBrushObjectHelper", gettext("Show Brush Helper"));
+	ar(showDecalObjectHelper, "showDecalObjectHelper", gettext("Show Decal Helper"));
+	ar(showPrefabObjectHelper, "showPrefabObjectHelper", gettext("Show Prefab Helper"));
+	ar(showPrefabSubObjectHelper, "showPrefabChildrenObjectHelper", gettext("Show Prefab Children Helper"));
+	ar(showRoadObjectHelper, "showRoadObjectHelper", gettext("Show Road Helper"));
+	ar(showGroupObjectHelper, "showRoadObjectHelper", gettext("Show Group Helper"));
+	ar(showEnviromentProbeObjectHelper, "showEnviromentProbeObjectHelper", gettext("Show Environment Probe Helper"));
 	ar.closeBlock();
 
 	if (ar.isInput())
@@ -269,12 +269,12 @@ bool SViewportMovementPreferences::Serialize(yasli::Archive& ar)
 	wheelBehaviorOptions.push_back("Zoom, Change Speed When Moving");
 	Serialization::StringListValue wheelBehavior(wheelBehaviorOptions, mouseWheelBehavior);
 
-	ar.openBlock("cameraSpeed", "Speed");
-	ar(yasli::Range(camMoveSpeed, 0.1f, 100.f), "camMoveSpeed", "Movement Speed");
-	ar(yasli::Range(camRotateSpeed, 0.1f, 100.f), "camRotateSpeed", "Rotation Speed");
-	ar(yasli::Range(camFastMoveSpeed, 1.1f, 100.f), "camFastMoveSpeed", "Fast Movement Multiplier");
-	ar(yasli::Range(wheelZoomSpeed, 0.1f, 100.0f), "wheelZoomSpeed", "Wheel Zoom Speed");
-	ar(wheelBehavior, "wheelBehavior", "Mouse Wheel Behavior");
+	ar.openBlock("cameraSpeed", gettext("Speed"));
+	ar(yasli::Range(camMoveSpeed, 0.1f, 100.f), "camMoveSpeed", gettext("Movement Speed"));
+	ar(yasli::Range(camRotateSpeed, 0.1f, 100.f), "camRotateSpeed", gettext("Rotation Speed"));
+	ar(yasli::Range(camFastMoveSpeed, 1.1f, 100.f), "camFastMoveSpeed", gettext("Fast Movement Multiplier"));
+	ar(yasli::Range(wheelZoomSpeed, 0.1f, 100.0f), "wheelZoomSpeed", gettext("Wheel Zoom Speed"));
+	ar(wheelBehavior, "wheelBehavior", gettext("Mouse Wheel Behavior"));
 	ar.closeBlock();
 
 	if (ar.isInput())
@@ -305,18 +305,18 @@ SViewportSelectionPreferences::SViewportSelectionPreferences()
 
 bool SViewportSelectionPreferences::Serialize(yasli::Archive& ar)
 {
-	ar.openBlock("selectionPreviewColor", "Selection Preview Color");
-	ar(colorPrefabBBox, "colorPrefabBBox", "Prefab Bounding Box");
-	ar(colorGroupBBox, "colorGroupBBox", "Group Bounding Box");
-	ar(colorEntityBBox, "colorEntityBBox", "Entity Bounding Box");
-	ar(yasli::Range(bboxAlpha, 0.f, 1.f), "bboxAlpha", "Bounding Box Highlight Alpha");
-	ar(geometryHighlightColor, "geometryHighlightColor", "Highlight Color");
-	ar(geometrySelectionColor, "geometrySelectionColor", "Selection Color");
-	ar(yasli::Range(outlinePixelWidth, 0, 10), "outlinePixelWidth", "Outline Width");
-	ar(yasli::Range(outlineGhostAlpha, 0.f, 1.f), "outlineGhostAlpha", "Outline Ghost Alpha");
-	ar(yasli::Range(geomAlpha, 0.f, 1.f), "geomAlpha", "Geometry Highlight Alpha");
-	ar(solidBrushGeometryColor, "solidBrushGeometryColor", "Solid Brush Geometry Color");
-	ar(yasli::Range(childObjectGeomAlpha, 0.f, 1.f), "childObjectGeomAlpha", "Child Geometry Highlight Alpha");
+	ar.openBlock("selectionPreviewColor", gettext("Selection Preview Color"));
+	ar(colorPrefabBBox, "colorPrefabBBox", gettext("Prefab Bounding Box"));
+	ar(colorGroupBBox, "colorGroupBBox", gettext("Group Bounding Box"));
+	ar(colorEntityBBox, "colorEntityBBox", gettext("Entity Bounding Box"));
+	ar(yasli::Range(bboxAlpha, 0.f, 1.f), "bboxAlpha", gettext("Bounding Box Highlight Alpha"));
+	ar(geometryHighlightColor, "geometryHighlightColor", gettext("Highlight Color"));
+	ar(geometrySelectionColor, "geometrySelectionColor", gettext("Selection Color"));
+	ar(yasli::Range(outlinePixelWidth, 0, 10), "outlinePixelWidth", gettext("Outline Width"));
+	ar(yasli::Range(outlineGhostAlpha, 0.f, 1.f), "outlineGhostAlpha", gettext("Outline Ghost Alpha"));
+	ar(yasli::Range(geomAlpha, 0.f, 1.f), "geomAlpha", gettext("Geometry Highlight Alpha"));
+	ar(solidBrushGeometryColor, "solidBrushGeometryColor", gettext("Solid Brush Geometry Color"));
+	ar(yasli::Range(childObjectGeomAlpha, 0.f, 1.f), "childObjectGeomAlpha", gettext("Child Geometry Highlight Alpha"));
 	ar.closeBlock();
 
 	if (ar.isInput())

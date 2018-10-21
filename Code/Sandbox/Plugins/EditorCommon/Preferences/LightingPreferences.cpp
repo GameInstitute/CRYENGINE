@@ -15,11 +15,11 @@ SLightingPreferences::SLightingPreferences()
 
 bool SLightingPreferences::Serialize(yasli::Archive& ar)
 {
-	ar.openBlock("general", "General");
-	ar(bForceSkyUpdate, "forceSkyUpdate", "Force Sky Update");
+	ar.openBlock("general", gettext("General"));
+	ar(bForceSkyUpdate, "forceSkyUpdate", gettext("Force Sky Update"));
 	ar.closeBlock();
-	ar.openBlock("experimental", "Experimental");
-	ar(bTotalIlluminationEnabled, "bTotalIlluminationEnabled", "Total Illumination");
+	ar.openBlock("experimental", gettext("Experimental"));
+	ar(bTotalIlluminationEnabled, "bTotalIlluminationEnabled", gettext("Total Illumination"));
 	ar.closeBlock();
 
 	return true;

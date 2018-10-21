@@ -385,7 +385,7 @@ CEnvBrowserWidget::CEnvBrowserWidget(QWidget* pParent)
 	m_pModel = new CEnvBrowserModel(this);
 	m_pFilter = new CEnvBrowserFilter(this, *m_pModel);
 
-	m_pSearchFilter->setPlaceholderText("Search");   // #SchematycTODO : Add drop down history to search filter?
+	m_pSearchFilter->setPlaceholderText(tr("Search"));   // #SchematycTODO : Add drop down history to search filter?
 
 	m_pFilter->setDynamicSortFilter(true);
 	m_pFilter->setSourceModel(m_pModel);

@@ -2,6 +2,22 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="zh_CN" sourcelanguage="en_US">
 <context>
+    <name>CEnvBrowserWidget</name>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/EditorSchematyc/EnvBrowserWidget.cpp" line="388"/>
+        <source>Search</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>CScriptBrowserWidget</name>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/EditorSchematyc/ScriptBrowserWidget.cpp" line="1224"/>
+        <source>Search</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>CrySchematycEditor::CEntityAssetType</name>
     <message>
         <location filename="../../../../Code/Sandbox/Plugins/EditorSchematyc/EntityAssetType.h" line="18"/>
@@ -23,6 +39,14 @@
         <location filename="../../../../Code/Sandbox/Plugins/EditorSchematyc/MainWindow.cpp" line="296"/>
         <source>Asset &apos;%1&apos; has unsaved modifications.</source>
         <translation>资产&apos;%1&apos;有未保存的修改。</translation>
+    </message>
+</context>
+<context>
+    <name>CrySchematycEditor::CVariablesWidget</name>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/EditorSchematyc/VariablesWidget.cpp" line="302"/>
+        <source>Search</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

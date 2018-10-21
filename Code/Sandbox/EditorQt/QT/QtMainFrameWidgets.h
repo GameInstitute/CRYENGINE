@@ -33,16 +33,16 @@ protected:
 
 	virtual void OnPopulateMenu() override
 	{
-		AddAction("Select All", OBJTYPE_ANY);
-		AddAction("Brushes", OBJTYPE_BRUSH);
-		AddAction("No Brushes", ~OBJTYPE_BRUSH);
-		AddAction("Entities", OBJTYPE_ENTITY);
-		AddAction("Prefabs", OBJTYPE_PREFAB);
-		AddAction("Areas, Shapes", OBJTYPE_VOLUME | OBJTYPE_SHAPE | OBJTYPE_VOLUMESOLID);
-		AddAction("AI Points", OBJTYPE_AIPOINT | OBJTYPE_TAGPOINT);
-		AddAction("Decals", OBJTYPE_DECAL);
-		AddAction("Designer Objects", OBJTYPE_SOLID);
-		AddAction("No Designer Objects", ~OBJTYPE_SOLID);
+		AddAction(gettext("Select All"), OBJTYPE_ANY);
+		AddAction(gettext("Brushes"), OBJTYPE_BRUSH);
+		AddAction(gettext("No Brushes"), ~OBJTYPE_BRUSH);
+		AddAction(gettext("Entities"), OBJTYPE_ENTITY);
+		AddAction(gettext("Prefabs"), OBJTYPE_PREFAB);
+		AddAction(gettext("Areas, Shapes"), OBJTYPE_VOLUME | OBJTYPE_SHAPE | OBJTYPE_VOLUMESOLID);
+		AddAction(gettext("AI Points"), OBJTYPE_AIPOINT | OBJTYPE_TAGPOINT);
+		AddAction(gettext("Decals"), OBJTYPE_DECAL);
+		AddAction(gettext("Designer Objects"), OBJTYPE_SOLID);
+		AddAction(gettext("No Designer Objects"), ~OBJTYPE_SOLID);
 	}
 
 	void AddAction(const char* str, int value)
@@ -67,16 +67,16 @@ public:
 		CObjectManager* objMng = static_cast<CObjectManager*>(iObjMng);
 		objMng->signalSelectionMaskChanged.Connect(this, &QSelectionMaskComboBox::OnSelectionMaskChanged);
 
-		addItem("Select All", QVariant(OBJTYPE_ANY));
-		addItem("Brushes", QVariant(OBJTYPE_BRUSH));
-		addItem("No Brushes", QVariant(~OBJTYPE_BRUSH));
-		addItem("Entities", QVariant(OBJTYPE_ENTITY));
-		addItem("Prefabs", QVariant(OBJTYPE_PREFAB));
-		addItem("Areas, Shapes", QVariant(OBJTYPE_VOLUME | OBJTYPE_SHAPE));
-		addItem("AI Points", QVariant(OBJTYPE_AIPOINT));
-		addItem("Decals", QVariant(OBJTYPE_DECAL));
-		addItem("Solids", QVariant(OBJTYPE_SOLID));
-		addItem("No Solids", QVariant(~OBJTYPE_SOLID));
+		addItem(QObject::tr("Select All"), QVariant(OBJTYPE_ANY));
+		addItem(QObject::tr("Brushes"), QVariant(OBJTYPE_BRUSH));
+		addItem(QObject::tr("No Brushes"), QVariant(~OBJTYPE_BRUSH));
+		addItem(QObject::tr("Entities"), QVariant(OBJTYPE_ENTITY));
+		addItem(QObject::tr("Prefabs"), QVariant(OBJTYPE_PREFAB));
+		addItem(QObject::tr("Areas, Shapes"), QVariant(OBJTYPE_VOLUME | OBJTYPE_SHAPE));
+		addItem(QObject::tr("AI Points"), QVariant(OBJTYPE_AIPOINT));
+		addItem(QObject::tr("Decals"), QVariant(OBJTYPE_DECAL));
+		addItem(QObject::tr("Solids"), QVariant(OBJTYPE_SOLID));
+		addItem(QObject::tr("No Solids"), QVariant(~OBJTYPE_SOLID));
 
 		connect(this, SIGNAL(activated(int)), this, SLOT(OnSelection(int)));
 	}

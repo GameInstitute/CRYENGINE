@@ -913,10 +913,10 @@ void PyGoto()
 }
 }
 
-REGISTER_PYTHON_COMMAND_WITH_EXAMPLE(DesignerUVMappingCommand::PyTranslationMode, uvmapping, translation_mode, "Switch to translation mode", "uvmapping.translation_mode")
-REGISTER_PYTHON_COMMAND_WITH_EXAMPLE(DesignerUVMappingCommand::PyRotationMode, uvmapping, rotation_mode, "Switch to rotation mode", "uvmapping.rotation_mode")
-REGISTER_PYTHON_COMMAND_WITH_EXAMPLE(DesignerUVMappingCommand::PyScaleMode, uvmapping, scale_mode, "Switch to scale mode", "uvmapping.scale_mode")
-REGISTER_PYTHON_COMMAND_WITH_EXAMPLE(DesignerUVMappingCommand::PySelectAll, uvmapping, select_all, "Select all", "uvmapping.select_all")
-REGISTER_PYTHON_COMMAND_WITH_EXAMPLE(DesignerUVMappingCommand::PyRefresh, uvmapping, refresh, "Refresh islands to remove unused and sync", "uvmapping.refresh")
-REGISTER_PYTHON_COMMAND_WITH_EXAMPLE(DesignerUVMappingCommand::PyGoto, uvmapping, goto, "Moves the camera to the selected island", "uvmapping.goto")
+REGISTER_PYTHON_COMMAND_WITH_EXAMPLE(DesignerUVMappingCommand::PyTranslationMode, uvmapping, translation_mode, gettext("Switch to translation mode"), "uvmapping.translation_mode")
+REGISTER_PYTHON_COMMAND_WITH_EXAMPLE(DesignerUVMappingCommand::PyRotationMode, uvmapping, rotation_mode, gettext("Switch to rotation mode"), "uvmapping.rotation_mode")
+REGISTER_PYTHON_COMMAND_WITH_EXAMPLE(DesignerUVMappingCommand::PyScaleMode, uvmapping, scale_mode, gettext("Switch to scale mode"), "uvmapping.scale_mode")
+REGISTER_PYTHON_COMMAND_WITH_EXAMPLE(DesignerUVMappingCommand::PySelectAll, uvmapping, select_all, gettext("Select all"), "uvmapping.select_all")
+REGISTER_PYTHON_COMMAND_WITH_EXAMPLE(DesignerUVMappingCommand::PyRefresh, uvmapping, refresh, gettext("Refresh islands to remove unused and sync"), "uvmapping.refresh")
+REGISTER_PYTHON_COMMAND_WITH_EXAMPLE(DesignerUVMappingCommand::PyGoto, uvmapping, goto, gettext("Moves the camera to the selected island"), "uvmapping.goto")
 

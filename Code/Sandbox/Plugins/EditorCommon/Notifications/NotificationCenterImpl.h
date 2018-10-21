@@ -26,9 +26,9 @@ struct SNotificationPreferences : public SPreferencePage
 
 	virtual bool Serialize(yasli::Archive& ar) override
 	{
-		ar.openBlock("general", "General");
-		ar(m_allowPopUps, "allowPopUps", "Allow Pop-Ups");
-		ar(m_combineNotifications, "combineNotifications", "Combine Notifications");
+		ar.openBlock("general", gettext("General"));
+		ar(m_allowPopUps, "allowPopUps", gettext("Allow Pop-Ups"));
+		ar(m_combineNotifications, "combineNotifications", gettext("Combine Notifications"));
 		ar(m_maxNotificationCount, "maxNotificationCount", m_combineNotifications ? "Max Notification Count" : "!Max Notification Count");
 		ar.closeBlock();
 		return true;

@@ -1020,59 +1020,59 @@ void PyToggle_display_helpers()
 }
 
 REGISTER_EDITOR_AND_SCRIPT_COMMAND(Private_LevelCommands::PySnapToGrid, level, snap_to_grid,
-                                   CCommandDescription("Enable/Disable snapping to grid").Param("enable", "0: Disable, 1: Enable"));
+                                   CCommandDescription(gettext("Enable/Disable snapping to grid")).Param("enable", gettext("0: Disable, 1: Enable")));
 
 REGISTER_EDITOR_AND_SCRIPT_COMMAND(Private_LevelCommands::PyToggleSnapToGrid, level, toggle_snap_to_grid,
-                                   CCommandDescription("Toggle snapping to grid"));
+                                   CCommandDescription(gettext("Toggle snapping to grid")));
 REGISTER_EDITOR_UI_COMMAND_DESC(level, toggle_snap_to_grid, "", "I", "icons:Viewport/viewport-snap-grid.ico")
 
 REGISTER_EDITOR_AND_SCRIPT_COMMAND(Private_LevelCommands::PySnapToAngle, level, snap_to_angle,
-                                   CCommandDescription("Enable/Disable snapping to angle").Param("enable", "0: Disable, 1: Enable"));
+                                   CCommandDescription(gettext("Enable/Disable snapping to angle")).Param("enable", gettext("0: Disable, 1: Enable")));
 
 REGISTER_EDITOR_AND_SCRIPT_COMMAND(Private_LevelCommands::PyToggleSnapToAngle, level, toggle_snap_to_angle,
-                                   CCommandDescription("Toggle snapping to angle"));
+                                   CCommandDescription(gettext("Toggle snapping to angle")));
 REGISTER_EDITOR_UI_COMMAND_DESC(level, toggle_snap_to_angle, "", "L", "icons:Viewport/viewport-snap-angle.ico")
 
 REGISTER_EDITOR_AND_SCRIPT_COMMAND(Private_LevelCommands::PyToggleSnapToScale, level, toggle_snap_to_scale,
-                                   CCommandDescription("Toggle snapping to scale"));
+                                   CCommandDescription(gettext("Toggle snapping to scale")));
 REGISTER_EDITOR_UI_COMMAND_DESC(level, toggle_snap_to_scale, "", "K", "icons:Viewport/viewport-snap-scale.ico")
 
 REGISTER_EDITOR_AND_SCRIPT_COMMAND(Private_LevelCommands::PySnapToVertex, level, snap_to_vertex,
-                                   CCommandDescription("Enable/Disable snapping to vertex").Param("enable", "0: Disable, 1: Enable"));
+                                   CCommandDescription(gettext("Enable/Disable snapping to vertex")).Param("enable", gettext("0: Disable, 1: Enable")));
 
 REGISTER_EDITOR_AND_SCRIPT_COMMAND(Private_LevelCommands::PyToggleSnapToVertex, level, toggle_snap_to_vertex,
-                                   CCommandDescription("Toggle snapping to vertex"));
+                                   CCommandDescription(gettext("Toggle snapping to vertex")));
 REGISTER_EDITOR_UI_COMMAND_DESC(level, toggle_snap_to_vertex, "", "V", "icons:Viewport/viewport-snap-vertex.ico")
 
 REGISTER_EDITOR_AND_SCRIPT_COMMAND(Private_LevelCommands::PySnapToPivot, level, snap_to_pivot,
-                                   CCommandDescription("Enable/Disable snapping to privot").Param("enable", "0: Disable, 1: Enable"));
+                                   CCommandDescription(gettext("Enable/Disable snapping to privot")).Param("enable", gettext("0: Disable, 1: Enable")));
 
 REGISTER_EDITOR_AND_SCRIPT_COMMAND(Private_LevelCommands::PyToggleSnapToPivot, level, toggle_snap_to_pivot,
-                                   CCommandDescription("Toggle snapping to pivot"));
+                                   CCommandDescription(gettext("Toggle snapping to pivot")));
 REGISTER_EDITOR_UI_COMMAND_DESC(level, toggle_snap_to_pivot, "", "P", "icons:Viewport/viewport-snap-pivot.ico")
 
 REGISTER_EDITOR_AND_SCRIPT_COMMAND(Private_LevelCommands::PySnapToTerrain, level, snap_to_terrain,
-                                   CCommandDescription("Enable/Disable snapping to terrain").Param("enable", "0: Disable, 1: Enable"));
+                                   CCommandDescription(gettext("Enable/Disable snapping to terrain")).Param("enable", gettext("0: Disable, 1: Enable")));
 
 REGISTER_EDITOR_AND_SCRIPT_COMMAND(Private_LevelCommands::PyToggleSnapToTerrain, level, toggle_snap_to_terrain,
-                                   CCommandDescription("Toggle snapping to terrain"));
+                                   CCommandDescription(gettext("Toggle snapping to terrain")));
 REGISTER_EDITOR_UI_COMMAND_DESC(level, toggle_snap_to_terrain, "", "T", "icons:common/viewport-snap-terrain.ico")
 
 REGISTER_EDITOR_AND_SCRIPT_COMMAND(Private_LevelCommands::PySnapToGeometry, level, snap_to_geometry,
-                                   CCommandDescription("Enable/Disable snapping to geometry").Param("enable", "0: Disable, 1: Enable"));
+                                   CCommandDescription(gettext("Enable/Disable snapping to geometry")).Param("enable", gettext("0: Disable, 1: Enable")));
 
 REGISTER_EDITOR_AND_SCRIPT_COMMAND(Private_LevelCommands::PyToggleSnapToGeometry, level, toggle_snap_to_geometry,
-                                   CCommandDescription("Toggle snapping to geometry"));
+                                   CCommandDescription(gettext("Toggle snapping to geometry")));
 REGISTER_EDITOR_UI_COMMAND_DESC(level, toggle_snap_to_geometry, "", "O", "icons:common/viewport-snap-geometry.ico")
 
 REGISTER_EDITOR_AND_SCRIPT_COMMAND(Private_LevelCommands::PySnapToSurfaceNormal, level, snap_to_surface_normal,
-                                   CCommandDescription("Enable/Disable snapping to surface normal").Param("enable", "0: Disable, 1: Enable"));
+                                   CCommandDescription(gettext("Enable/Disable snapping to surface normal")).Param("enable", gettext("0: Disable, 1: Enable")));
 
 REGISTER_EDITOR_AND_SCRIPT_COMMAND(Private_LevelCommands::PyToggleSnapToSurfaceNormal, level, toggle_snap_to_surface_normal,
-                                   CCommandDescription("Toggle snapping to surface normal"));
+                                   CCommandDescription(gettext("Toggle snapping to surface normal")));
 REGISTER_EDITOR_UI_COMMAND_DESC(level, toggle_snap_to_surface_normal, "", "N", "icons:common/viewport-snap-normal.ico")
 
 REGISTER_EDITOR_AND_SCRIPT_COMMAND(Private_LevelCommands::PyToggle_display_helpers, level, toggle_display_helpers,
-                                   CCommandDescription("Toggle display of helpers in the level editor viewport"));
+                                   CCommandDescription(gettext("Toggle display of helpers in the level editor viewport")));
 REGISTER_EDITOR_UI_COMMAND_DESC(level, toggle_display_helpers, "", "Ctrl+H", "icons:Viewport/viewport-helpers.ico")
 

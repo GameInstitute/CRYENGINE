@@ -40,13 +40,13 @@ SFlowGraphGeneralPreferences::SFlowGraphGeneralPreferences()
 
 bool SFlowGraphGeneralPreferences::Serialize(yasli::Archive& ar)
 {
-	ar.openBlock("generalSettings", "General");
-	ar(enableMigration, "enableMigration", "Automatic Migration");
-	ar(showNodeIDs, "showNodeIDs", "Show Node IDs");
-	ar(showToolTip, "showToolTip", "Show ToolTips");
-	ar(edgesOnTopOfNodes, "edgesOnTopOfNodes", "Edges On Top Of Nodes");
-	ar(splineArrows, "splineArrows", "Spline Edges");
-	ar(highlightEdges, "highlightEdges", "Highlight Selected Edges");
+	ar.openBlock("generalSettings", gettext("General"));
+	ar(enableMigration, "enableMigration", gettext("Automatic Migration"));
+	ar(showNodeIDs, "showNodeIDs", gettext("Show Node IDs"));
+	ar(showToolTip, "showToolTip", gettext("Show ToolTips"));
+	ar(edgesOnTopOfNodes, "edgesOnTopOfNodes", gettext("Edges On Top Of Nodes"));
+	ar(splineArrows, "splineArrows", gettext("Spline Edges"));
+	ar(highlightEdges, "highlightEdges", gettext("Highlight Selected Edges"));
 	ar.closeBlock();
 
 	return true;
@@ -98,42 +98,42 @@ SFlowGraphColorPreferences::SFlowGraphColorPreferences()
 
 bool SFlowGraphColorPreferences::Serialize(yasli::Archive& ar)
 {
-	ar(yasli::Range(opacity, 1.f, 100.f), "opacity", "Opacity");
-	Private_FlowgraphColorHelper::SerializeColor(ar, colorArrow, "colorArrow", "Arrow Color");
-	Private_FlowgraphColorHelper::SerializeColor(ar, colorInArrowHighlighted, "colorInArrowHighlighted", "InArrow Highlighted Color");
-	Private_FlowgraphColorHelper::SerializeColor(ar, colorOutArrowHighlighted, "colorOutArrowHighlighted", "OutArrow Highlighted Color");
-	Private_FlowgraphColorHelper::SerializeColor(ar, colorPortEdgeHighlighted, "colorPortEdgeHighlighted", "Port Edge Highlighted Color");
-	Private_FlowgraphColorHelper::SerializeColor(ar, colorArrowDisabled, "colorArrowDisabled", "Arrow Disabled Color");
-	Private_FlowgraphColorHelper::SerializeColor(ar, colorNodeOutline, "colorNodeOutline", "Node Outline Color");
-	Private_FlowgraphColorHelper::SerializeColor(ar, colorNodeOutlineSelected, "colorNodeOutlineSelected", "Node Outline Color Selected");
-	Private_FlowgraphColorHelper::SerializeColor(ar, colorNodeBkg, "colorNodeBkg", "Node Background Color");
-	Private_FlowgraphColorHelper::SerializeColor(ar, colorNodeSelected, "colorNodeSelected", "Node Selected Color");
-	Private_FlowgraphColorHelper::SerializeColor(ar, colorTitleText, "colorTitleText", "Title Text Color");
-	Private_FlowgraphColorHelper::SerializeColor(ar, colorTitleTextSelected, "colorTitleTextSelected", "Title Text Color Selected");
-	Private_FlowgraphColorHelper::SerializeColor(ar, colorText, "colorText", "Text Color");
-	Private_FlowgraphColorHelper::SerializeColor(ar, colorBackground, "colorBackground", "Background Color");
-	Private_FlowgraphColorHelper::SerializeColor(ar, colorGrid, "colorGrid", "Grid Color");
-	Private_FlowgraphColorHelper::SerializeColor(ar, colorBreakPoint, "colorBreakPoint", "Breakpoint Color");
-	Private_FlowgraphColorHelper::SerializeColor(ar, colorBreakPointDisabled, "colorBreakPointDisabled", "Breakpoint Disabled Color");
-	Private_FlowgraphColorHelper::SerializeColor(ar, colorBreakPointArrow, "colorBreakPointArrow", "Breakpoint Arrow Color");
-	Private_FlowgraphColorHelper::SerializeColor(ar, colorEntityPortNotConnected, "colorEntityPortNotConnected", "Entity Port Not Connected Color");
-	Private_FlowgraphColorHelper::SerializeColor(ar, colorPort, "colorPort", "Port Color");
-	Private_FlowgraphColorHelper::SerializeColor(ar, colorPortSelected, "colorPortSelected", "Port Selected Color");
-	Private_FlowgraphColorHelper::SerializeColor(ar, colorEntityTextInvalid, "colorEntityTextInvalid", "Entity Invalid Text Color");
-	Private_FlowgraphColorHelper::SerializeColor(ar, colorDownArrow, "colorDownArrow", "Down Arrow Color");
-	Private_FlowgraphColorHelper::SerializeColor(ar, colorCustomNodeBkg, "colorCustomNodeBkg", "Custom Node Background Color");
-	Private_FlowgraphColorHelper::SerializeColor(ar, colorCustomSelectedNodeBkg, "colorCustomSelectedNodeBkg", "Custom Node Selected Background Color");
-	Private_FlowgraphColorHelper::SerializeColor(ar, colorPortDebuggingInitialization, "colorPortDebuggingInitialization", "Port Debugging Color for the Initialization Step");
-	Private_FlowgraphColorHelper::SerializeColor(ar, colorPortDebugging, "colorPortDebugging", "Port Debugging Color");
-	Private_FlowgraphColorHelper::SerializeColor(ar, colorPortDebuggingText, "colorPortDebuggingText", "Port Text Debugging Color");
-	Private_FlowgraphColorHelper::SerializeColor(ar, colorQuickSearchBackground, "colorQuickSearchBackground", "Quick Search Background Color");
-	Private_FlowgraphColorHelper::SerializeColor(ar, colorQuickSearchResultText, "colorQuickSearchResultText", "Quick Search Result Text Color");
-	Private_FlowgraphColorHelper::SerializeColor(ar, colorQuickSearchCountText, "colorQuickSearchCountText", "Quick Search Count Text Color");
-	Private_FlowgraphColorHelper::SerializeColor(ar, colorQuickSearchBorder, "colorQuickSearchBorder", "Quick Search Border Color");
-	Private_FlowgraphColorHelper::SerializeColor(ar, colorDebugNodeTitle, "colorNodeDebugTitle", "Debug Node Title Color");
-	Private_FlowgraphColorHelper::SerializeColor(ar, colorDebugNode, "colorNodeDebug", "Debug Node Background Color");
-	Private_FlowgraphColorHelper::SerializeColor(ar, colorNodeBckgdError, "colorNodeBckgdError", "Node w/ Error Background Color");
-	Private_FlowgraphColorHelper::SerializeColor(ar, colorNodeTitleError, "colorNodeTitleError", "Node w/ Error Title Color");
+	ar(yasli::Range(opacity, 1.f, 100.f), "opacity", gettext("Opacity"));
+	Private_FlowgraphColorHelper::SerializeColor(ar, colorArrow, "colorArrow", gettext("Arrow Color"));
+	Private_FlowgraphColorHelper::SerializeColor(ar, colorInArrowHighlighted, "colorInArrowHighlighted", gettext("InArrow Highlighted Color"));
+	Private_FlowgraphColorHelper::SerializeColor(ar, colorOutArrowHighlighted, "colorOutArrowHighlighted", gettext("OutArrow Highlighted Color"));
+	Private_FlowgraphColorHelper::SerializeColor(ar, colorPortEdgeHighlighted, "colorPortEdgeHighlighted", gettext("Port Edge Highlighted Color"));
+	Private_FlowgraphColorHelper::SerializeColor(ar, colorArrowDisabled, "colorArrowDisabled", gettext("Arrow Disabled Color"));
+	Private_FlowgraphColorHelper::SerializeColor(ar, colorNodeOutline, "colorNodeOutline", gettext("Node Outline Color"));
+	Private_FlowgraphColorHelper::SerializeColor(ar, colorNodeOutlineSelected, "colorNodeOutlineSelected", gettext("Node Outline Color Selected"));
+	Private_FlowgraphColorHelper::SerializeColor(ar, colorNodeBkg, "colorNodeBkg", gettext("Node Background Color"));
+	Private_FlowgraphColorHelper::SerializeColor(ar, colorNodeSelected, "colorNodeSelected", gettext("Node Selected Color"));
+	Private_FlowgraphColorHelper::SerializeColor(ar, colorTitleText, "colorTitleText", gettext("Title Text Color"));
+	Private_FlowgraphColorHelper::SerializeColor(ar, colorTitleTextSelected, "colorTitleTextSelected", gettext("Title Text Color Selected"));
+	Private_FlowgraphColorHelper::SerializeColor(ar, colorText, "colorText", gettext("Text Color"));
+	Private_FlowgraphColorHelper::SerializeColor(ar, colorBackground, "colorBackground", gettext("Background Color"));
+	Private_FlowgraphColorHelper::SerializeColor(ar, colorGrid, "colorGrid", gettext("Grid Color"));
+	Private_FlowgraphColorHelper::SerializeColor(ar, colorBreakPoint, "colorBreakPoint", gettext("Breakpoint Color"));
+	Private_FlowgraphColorHelper::SerializeColor(ar, colorBreakPointDisabled, "colorBreakPointDisabled", gettext("Breakpoint Disabled Color"));
+	Private_FlowgraphColorHelper::SerializeColor(ar, colorBreakPointArrow, "colorBreakPointArrow", gettext("Breakpoint Arrow Color"));
+	Private_FlowgraphColorHelper::SerializeColor(ar, colorEntityPortNotConnected, "colorEntityPortNotConnected", gettext("Entity Port Not Connected Color"));
+	Private_FlowgraphColorHelper::SerializeColor(ar, colorPort, "colorPort", gettext("Port Color"));
+	Private_FlowgraphColorHelper::SerializeColor(ar, colorPortSelected, "colorPortSelected", gettext("Port Selected Color"));
+	Private_FlowgraphColorHelper::SerializeColor(ar, colorEntityTextInvalid, "colorEntityTextInvalid", gettext("Entity Invalid Text Color"));
+	Private_FlowgraphColorHelper::SerializeColor(ar, colorDownArrow, "colorDownArrow", gettext("Down Arrow Color"));
+	Private_FlowgraphColorHelper::SerializeColor(ar, colorCustomNodeBkg, "colorCustomNodeBkg", gettext("Custom Node Background Color"));
+	Private_FlowgraphColorHelper::SerializeColor(ar, colorCustomSelectedNodeBkg, "colorCustomSelectedNodeBkg", gettext("Custom Node Selected Background Color"));
+	Private_FlowgraphColorHelper::SerializeColor(ar, colorPortDebuggingInitialization, "colorPortDebuggingInitialization", gettext("Port Debugging Color for the Initialization Step"));
+	Private_FlowgraphColorHelper::SerializeColor(ar, colorPortDebugging, "colorPortDebugging", gettext("Port Debugging Color"));
+	Private_FlowgraphColorHelper::SerializeColor(ar, colorPortDebuggingText, "colorPortDebuggingText", gettext("Port Text Debugging Color"));
+	Private_FlowgraphColorHelper::SerializeColor(ar, colorQuickSearchBackground, "colorQuickSearchBackground", gettext("Quick Search Background Color"));
+	Private_FlowgraphColorHelper::SerializeColor(ar, colorQuickSearchResultText, "colorQuickSearchResultText", gettext("Quick Search Result Text Color"));
+	Private_FlowgraphColorHelper::SerializeColor(ar, colorQuickSearchCountText, "colorQuickSearchCountText", gettext("Quick Search Count Text Color"));
+	Private_FlowgraphColorHelper::SerializeColor(ar, colorQuickSearchBorder, "colorQuickSearchBorder", gettext("Quick Search Border Color"));
+	Private_FlowgraphColorHelper::SerializeColor(ar, colorDebugNodeTitle, "colorNodeDebugTitle", gettext("Debug Node Title Color"));
+	Private_FlowgraphColorHelper::SerializeColor(ar, colorDebugNode, "colorNodeDebug", gettext("Debug Node Background Color"));
+	Private_FlowgraphColorHelper::SerializeColor(ar, colorNodeBckgdError, "colorNodeBckgdError", gettext("Node w/ Error Background Color"));
+	Private_FlowgraphColorHelper::SerializeColor(ar, colorNodeTitleError, "colorNodeTitleError", gettext("Node w/ Error Title Color"));
 
 	if (ar.isInput())
 	{

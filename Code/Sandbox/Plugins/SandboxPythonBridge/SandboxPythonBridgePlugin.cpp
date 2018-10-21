@@ -23,7 +23,7 @@ namespace PluginInfo
 
 SandboxPythonBridgePlugin::SandboxPythonBridgePlugin()
 {
-	InitialTranslator("SandboxPythonBridgePlugin", "SandboxPythonBridgePlugin.qm");
+	//InitialTranslator("SandboxPythonBridgePlugin", "SandboxPythonBridgePlugin.qm");
 }
 
 

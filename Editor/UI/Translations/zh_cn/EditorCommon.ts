@@ -1047,9 +1047,15 @@ Do you really want to rename the asset?</source>
         <translation>清空选择</translation>
     </message>
     <message>
-        <location filename="../../../../Code/Sandbox/Plugins/EditorCommon/Objects/BaseObject.cpp" line="4171"/>
-        <source>Minimum Graphics</source>
-        <translation>最低图形</translation>
+        <location filename="../../../../Code/Sandbox/Plugins/EditorCommon/Controls/DictionaryWidget.cpp" line="330"/>
+        <source>Search</source>
+        <translation type="unfinished">搜索</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/Plugins/EditorCommon/EditorFramework/PreferencesDialog.cpp" line="58"/>
+        <location filename="../../../../Code/Sandbox/Plugins/EditorCommon/EditorFramework/PreferencesDialog.cpp" line="86"/>
+        <source>Reset to Default</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

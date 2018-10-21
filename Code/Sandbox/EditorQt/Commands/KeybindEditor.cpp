@@ -688,10 +688,10 @@ CKeybindEditor::CKeybindEditor(QWidget* parent)
 	QObject::connect(m_model, &QAbstractItemModel::dataChanged, this, &CKeybindEditor::OnKeybindsChanged);
 
 	//buttons
-	QPushButton* buttonAddCustom = new QPushButton("Add Custom");
-	QPushButton* buttonReset = new QPushButton("Reset All");
-	QPushButton* buttonImport = new QPushButton("Import...");
-	QPushButton* buttonExport = new QPushButton("Export...");
+	QPushButton* buttonAddCustom = new QPushButton(QObject::tr("Add Custom"));
+	QPushButton* buttonReset = new QPushButton(QObject::tr("Reset All"));
+	QPushButton* buttonImport = new QPushButton(QObject::tr("Import..."));
+	QPushButton* buttonExport = new QPushButton(QObject::tr("Export..."));
 
 	QObject::connect(buttonAddCustom, &QPushButton::clicked, this, &CKeybindEditor::OnAddCustomCommand);
 	QObject::connect(buttonReset, &QPushButton::clicked, &Private_KeybindEditor::PyResetAllKeybinds);

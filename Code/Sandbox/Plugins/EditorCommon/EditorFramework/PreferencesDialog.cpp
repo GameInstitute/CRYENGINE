@@ -55,7 +55,7 @@ QPreferencePage::QPreferencePage(std::vector<SPreferencePage*> preferences, cons
 	pActionLayout->setSpacing(0);
 	pActionLayout->setContentsMargins(0, 5, 0, 0);
 	pActionLayout->addItem(new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum));
-	QPushButton* pResetButton = new QPushButton("Reset to Default");
+	QPushButton* pResetButton = new QPushButton(QObject::tr("Reset to Default"));
 	connect(pResetButton, &QPushButton::clicked, this, &QPreferencePage::OnResetToDefault);
 	pActionLayout->addWidget(pResetButton);
 	pMainLayout->addLayout(pActionLayout);
@@ -83,7 +83,7 @@ QPreferencePage::QPreferencePage(SPreferencePage* pPreferencePage, QWidget* pPar
 	pActionLayout->setSpacing(0);
 	pActionLayout->setContentsMargins(0, 5, 0, 0);
 	pActionLayout->addItem(new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum));
-	QPushButton* pResetButton = new QPushButton("Reset to Default");
+	QPushButton* pResetButton = new QPushButton(QObject::tr("Reset to Default"));
 	connect(pResetButton, &QPushButton::clicked, this, &QPreferencePage::OnResetToDefault);
 	pActionLayout->addWidget(pResetButton);
 	pMainLayout->addLayout(pActionLayout);

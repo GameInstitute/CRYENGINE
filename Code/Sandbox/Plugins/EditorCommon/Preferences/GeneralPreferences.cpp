@@ -28,15 +28,15 @@ SEditorGeneralPreferences::SEditorGeneralPreferences()
 bool SEditorGeneralPreferences::Serialize(yasli::Archive& ar)
 {
 	// General
-	ar.openBlock("generalSettings", "General");
-	ar(m_enableSourceControl, "enableSourceControl", "Enable Source Control");
-	ar(m_saveOnlyModified, "saveOnlyModified", "External layers: Save only Modified");
-	ar(m_freezeReadOnly, "freezeReadOnly", "Freeze Read-only external layer on Load");
-	ar(showWindowsInTaskbar, "showWindowsInTaskbar", "Show all windows in taskbar (requires restart)");
+	ar.openBlock("generalSettings", gettext("General"));
+	ar(m_enableSourceControl, "enableSourceControl", gettext("Enable Source Control"));
+	ar(m_saveOnlyModified, "saveOnlyModified", gettext("External layers: Save only Modified"));
+	ar(m_freezeReadOnly, "freezeReadOnly", gettext("Freeze Read-only external layer on Load"));
+	ar(showWindowsInTaskbar, "showWindowsInTaskbar", gettext("Show all windows in taskbar (requires restart)"));
 	ar.closeBlock();
 
-	ar.openBlock("Console", "Console");
-	ar(m_showTimeInConsole, "showTimeInConsole", "Show Time In Console");
+	ar.openBlock("Console", gettext("Console"));
+	ar(m_showTimeInConsole, "showTimeInConsole", gettext("Show Time In Console"));
 	ar.closeBlock();
 
 	return true;
@@ -65,26 +65,26 @@ SEditorFilePreferences::SEditorFilePreferences()
 bool SEditorFilePreferences::Serialize(yasli::Archive& ar)
 {
 	auto prevAutoSavetime = m_autoSaveTime;
-	ar.openBlock("files", "Files");
-	ar(filesBackup, "filesBackup", "Backup on Save");
+	ar.openBlock("files", gettext("Files"));
+	ar(filesBackup, "filesBackup", gettext("Backup on Save"));
 	ar.closeBlock();
 
-	ar.openBlock("textEditors", "Text Editors");
-	ar(openCSharpSolution, "openCSharSolution", "Open C# solution instead of files");
-	ar(textEditorCSharp, "textEditorCSharp", "C# Text Editor");
-	ar(textEditorScript, "textEditorScript", "Scripts Text Editor");
-	ar(textEditorShaders, "textEditorShaders", "Shaders Text Editor");
-	ar(textEditorBspaces, "textEditorBspaces", "BSpace Text Editor");
-	ar(strStandardTempDirectory, "strStandardTempDirectory", "Standard Temporary Directory");
-	ar(textureEditor, "textureEditor", "Texture Editor");
-	ar(animEditor, "animEditor", "Animation Editor");
+	ar.openBlock("textEditors", gettext("Text Editors"));
+	ar(openCSharpSolution, "openCSharSolution", gettext("Open C# solution instead of files"));
+	ar(textEditorCSharp, "textEditorCSharp", gettext("C# Text Editor"));
+	ar(textEditorScript, "textEditorScript", gettext("Scripts Text Editor"));
+	ar(textEditorShaders, "textEditorShaders", gettext("Shaders Text Editor"));
+	ar(textEditorBspaces, "textEditorBspaces", gettext("BSpace Text Editor"));
+	ar(strStandardTempDirectory, "strStandardTempDirectory", gettext("Standard Temporary Directory"));
+	ar(textureEditor, "textureEditor", gettext("Texture Editor"));
+	ar(animEditor, "animEditor", gettext("Animation Editor"));
 	ar.closeBlock();
 
 	// Autobackup table.
-	ar.openBlock("autoBackup", "Auto Back-up");
-	ar(autoSaveEnabled, "autoSaveEnabled", "Enable");
-	ar(yasli::Range(m_autoSaveTime, 2, 10000), "autoSaveTime", "Auto Backup Interval (Minutes)");
-	ar(yasli::Range(autoSaveMaxCount, 1, 100), "autoSaveMaxCount", "Maximum Auto Backups");
+	ar.openBlock("autoBackup", gettext("Auto Back-up"));
+	ar(autoSaveEnabled, "autoSaveEnabled", gettext("Enable"));
+	ar(yasli::Range(m_autoSaveTime, 2, 10000), "autoSaveTime", gettext("Auto Backup Interval (Minutes)"));
+	ar(yasli::Range(autoSaveMaxCount, 1, 100), "autoSaveMaxCount", gettext("Maximum Auto Backups"));
 	ar.closeBlock();
 
 	if (ar.isInput() && prevAutoSavetime != m_autoSaveTime)

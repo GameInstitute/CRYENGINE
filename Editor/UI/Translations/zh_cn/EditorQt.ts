@@ -2672,7 +2672,7 @@ All object of replaced layer will be deleted.</source>
         <translation>新预制名称</translation>
     </message>
     <message>
-        <location filename="../../../../Code/Sandbox/EditorQt/QT/QtMain.cpp" line="161"/>
+        <location filename="../../../../Code/Sandbox/EditorQt/QT/QtMain.cpp" line="199"/>
         <source>Waiting for debugger</source>
         <translation>调试器警告</translation>
     </message>
@@ -2705,6 +2705,21 @@ All object of replaced layer will be deleted.</source>
         <location filename="../../../../Code/Sandbox/EditorQt/QT/QtMainFrame.cpp" line="1977"/>
         <source>Undo History</source>
         <translation>撤销历史</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/EditorQt/QT/QtMainFrame.cpp" line="2014"/>
+        <source>Console Commands</source>
+        <translation>控制台命令</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/EditorQt/QT/QtMainFrame.cpp" line="2020"/>
+        <source>Console Variables</source>
+        <translation>控制台变量</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/EditorQt/QT/QtMainFrame.cpp" line="2028"/>
+        <source>About Sandbox...</source>
+        <translation>关于Sandbox...</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/EditorQt/QT/Widgets/QViewportHeader.cpp" line="659"/>
@@ -2927,6 +2942,76 @@ Do you want to save your changes?</source>
 Ctrl: Add To Selection  Alt: Scale Selected  Alt+Ctrl: Rotate Selected DEL: Delete Selected</source>
         <translation>选择/移动/缩放/旋转/删除选定的植被对象实例。
 Ctrl：添加到选择 Alt：缩放所选 Alt + Ctrl：旋转所选 DEL：删除所选项</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/EditorQt/QT/QtMainFrameWidgets.h" line="70"/>
+        <source>Select All</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/EditorQt/QT/QtMainFrameWidgets.h" line="71"/>
+        <source>Brushes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/EditorQt/QT/QtMainFrameWidgets.h" line="72"/>
+        <source>No Brushes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/EditorQt/QT/QtMainFrameWidgets.h" line="73"/>
+        <source>Entities</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/EditorQt/QT/QtMainFrameWidgets.h" line="74"/>
+        <source>Prefabs</source>
+        <translation type="unfinished">预制</translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/EditorQt/QT/QtMainFrameWidgets.h" line="75"/>
+        <source>Areas, Shapes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/EditorQt/QT/QtMainFrameWidgets.h" line="76"/>
+        <source>AI Points</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/EditorQt/QT/QtMainFrameWidgets.h" line="77"/>
+        <source>Decals</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/EditorQt/QT/QtMainFrameWidgets.h" line="78"/>
+        <source>Solids</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/EditorQt/QT/QtMainFrameWidgets.h" line="79"/>
+        <source>No Solids</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/EditorQt/Commands/KeybindEditor.cpp" line="691"/>
+        <source>Add Custom</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/EditorQt/Commands/KeybindEditor.cpp" line="692"/>
+        <source>Reset All</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/EditorQt/Commands/KeybindEditor.cpp" line="693"/>
+        <source>Import...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../Code/Sandbox/EditorQt/Commands/KeybindEditor.cpp" line="694"/>
+        <source>Export...</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

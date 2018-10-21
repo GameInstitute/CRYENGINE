@@ -762,29 +762,29 @@ static void PyReloadAll()
 }
 
 REGISTER_EDITOR_AND_SCRIPT_COMMAND(Private_PrefabCommands::PyCreateFromSelection, prefab, create_from_selection,
-                                   CCommandDescription("Create prefab"));
+                                   CCommandDescription(gettext("Create prefab")));
 REGISTER_EDITOR_COMMAND_ICON(prefab, create_from_selection, "icons:Tools/Create_Prefab.ico");
 
 REGISTER_EDITOR_AND_SCRIPT_COMMAND(Private_PrefabCommands::PyAddSelection, prefab, add_to_prefab,
-                                   CCommandDescription("Add selection to prefab"));
+                                   CCommandDescription(gettext("Add selection to prefab")));
 
 REGISTER_EDITOR_AND_SCRIPT_COMMAND(Private_PrefabCommands::PyExtractAllFromSelection, prefab, extract_all,
-                                   CCommandDescription("Extract all objects"));
+                                   CCommandDescription(gettext("Extract all objects")));
 
 REGISTER_EDITOR_AND_SCRIPT_COMMAND(Private_PrefabCommands::PyCloneAllFromSelection, prefab, clone_all,
-                                   CCommandDescription("Clone all objects"));
+                                   CCommandDescription(gettext("Clone all objects")));
 
 REGISTER_EDITOR_AND_SCRIPT_COMMAND(Private_PrefabCommands::PyOpen, prefab, open,
-                                   CCommandDescription("Open prefab"));
+                                   CCommandDescription(gettext("Open prefab")));
 
 REGISTER_EDITOR_AND_SCRIPT_COMMAND(Private_PrefabCommands::PyClose, prefab, close,
-                                   CCommandDescription("Close prefab"));
+                                   CCommandDescription(gettext("Close prefab")));
 
 REGISTER_EDITOR_AND_SCRIPT_COMMAND(Private_PrefabCommands::PyOpenAll, prefab, open_all,
-                                   CCommandDescription("Open all prefabs"));
+                                   CCommandDescription(gettext("Open all prefabs")));
 
 REGISTER_EDITOR_AND_SCRIPT_COMMAND(Private_PrefabCommands::PyCloseAll, prefab, close_all,
-                                   CCommandDescription("Close all prefabs"));
+                                   CCommandDescription(gettext("Close all prefabs")));
 
 REGISTER_EDITOR_AND_SCRIPT_COMMAND(Private_PrefabCommands::PyReloadAll, prefab, reload_all,
-                                   CCommandDescription("Reload all prefabs"));
+                                   CCommandDescription(gettext("Reload all prefabs")));
