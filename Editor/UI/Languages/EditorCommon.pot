@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-21 04:21+0800\n"
+"POT-Creation-Date: 2018-10-21 10:15+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,6 +32,9 @@ msgid "Camera Speed Height-Relative"
 msgstr ""
 
 #: e:\coding\cryengine\code\sandbox\plugins\editorcommon\objects\baseobject.cpp:4122
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:31
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\lightingpreferences.cpp:18
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:80
 msgid "General"
 msgstr ""
 
@@ -73,4 +76,392 @@ msgstr ""
 
 #: e:\coding\cryengine\code\sandbox\plugins\editorcommon\objects\baseobject.cpp:4242
 msgid "Scale"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:32
+msgid "Enable Source Control"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:33
+msgid "External layers: Save only Modified"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:34
+msgid "Freeze Read-only external layer on Load"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:35
+msgid "Show all windows in taskbar (requires restart)"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:38
+msgid "Console"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:39
+msgid "Show Time In Console"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:68
+msgid "Files"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:69
+msgid "Backup on Save"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:72
+msgid "Text Editors"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:73
+msgid "Open C# solution instead of files"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:74
+msgid "C# Text Editor"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:75
+msgid "Scripts Text Editor"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:76
+msgid "Shaders Text Editor"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:77
+msgid "BSpace Text Editor"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:78
+msgid "Standard Temporary Directory"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:79
+msgid "Texture Editor"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:80
+msgid "Animation Editor"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:84
+msgid "Auto Back-up"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:85
+msgid "Enable"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:86
+msgid "Auto Backup Interval (Minutes)"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:87
+msgid "Maximum Auto Backups"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\lightingpreferences.cpp:19
+msgid "Force Sky Update"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\lightingpreferences.cpp:21
+msgid "Experimental"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\lightingpreferences.cpp:22
+msgid "Total Illumination"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:81
+msgid "Hide objects by config spec"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:82
+msgid "Synchronize 2D Viewports"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:83
+msgid "Perspective View FOV"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:84
+msgid "Perspective View Aspect Ratio"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:85
+msgid "Enable Right-Click Context Menu"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:88
+msgid "Display"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:89
+msgid "Show 4:3 Aspect Ratio Frame"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:90
+msgid "Hide Mouse Cursor When Captured"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:91
+msgid "Drag Square Size"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:93
+msgid "Display Object Links"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:94
+msgid "Display Animation Tracks"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:95
+msgid "Always Show Radiuses"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:96
+msgid "Always Show Prefab Bounds"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:97
+msgid "Show Bounding Boxes"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:98
+msgid "Always Draw Entity Labels"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:99
+msgid "Always Show Trigger Bounds"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:100
+msgid "Show Object Icons"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:102
+msgid "Hide distanced helpers"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:105
+msgid "Display helpers up to given distance"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:108
+msgid "Scale object icons with distance"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:111
+msgid "Threshold for distance scaling"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:114
+msgid "Show object icons on top of objects"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:115
+msgid "Threshold for showing selection helpers"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:116
+msgid "Show Helpers of Frozen Objects"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:117
+msgid "Fill Selected Shapes"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:118
+msgid "Show Snapping Grid Guide"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:119
+msgid "Display dimension figures"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:120
+msgid "Display Selected Object Orientation"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:121
+msgid "Tools Render Update Mutual Exclusive"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:124
+msgid "Map Viewport"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:125
+msgid "Swap X/Y Axis"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:126
+msgid "Map Texture Resolution"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:129
+msgid "Text Labels"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:130
+msgid "Enabled"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:131
+msgid "Distance"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:172
+msgid "Debug Highlight"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:175
+msgid "Breakable Materials"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:176
+msgid "Missing Surface Types"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:179
+msgid "Profiling"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:180
+msgid "Show Mesh Statistics on Mouse Over"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:183
+msgid "Warnings"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:184
+msgid "Warning Icons Draw Distance"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:185
+msgid "Show Scale Warnings"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:186
+msgid "Show Rotation Warnings"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:189
+msgid "Debug Helper"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:190
+msgid "Show Entity Object Helper"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:191
+msgid "Show Area Helper"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:192
+msgid "Show Shape Helper"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:193
+msgid "Show Brush Helper"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:194
+msgid "Show Decal Helper"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:195
+msgid "Show Prefab Helper"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:196
+msgid "Show Prefab Children Helper"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:197
+msgid "Show Road Helper"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:198
+msgid "Show Group Helper"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:199
+msgid "Show Environment Probe Helper"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:272
+msgid "Speed"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:273
+msgid "Movement Speed"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:274
+msgid "Rotation Speed"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:275
+msgid "Fast Movement Multiplier"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:276
+msgid "Wheel Zoom Speed"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:277
+msgid "Mouse Wheel Behavior"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:308
+msgid "Selection Preview Color"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:309
+msgid "Prefab Bounding Box"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:310
+msgid "Group Bounding Box"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:311
+msgid "Entity Bounding Box"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:312
+msgid "Bounding Box Highlight Alpha"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:313
+msgid "Highlight Color"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:314
+msgid "Selection Color"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:315
+msgid "Outline Width"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:316
+msgid "Outline Ghost Alpha"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:317
+msgid "Geometry Highlight Alpha"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:318
+msgid "Solid Brush Geometry Color"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:319
+msgid "Child Geometry Highlight Alpha"
 msgstr ""

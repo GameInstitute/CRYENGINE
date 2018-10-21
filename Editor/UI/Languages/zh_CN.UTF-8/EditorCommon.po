@@ -1,23 +1,22 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# Chinese translations for PACKAGE package
+# PACKAGE 软件包的简体中文翻译.
+# Copyright (C) 2018 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Automatically generated, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-21 04:21+0800\n"
-"PO-Revision-Date: 2018-10-21 04:37+0800\n"
-"Language-Team: \n"
+"POT-Creation-Date: 2018-10-21 10:15+0800\n"
+"PO-Revision-Date: 2018-10-21 10:36+0800\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.2\n"
-"Last-Translator: \n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"Language: zh_CN\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #: e:\coding\cryengine\code\sandbox\plugins\editorcommon\renderviewport.cpp:1979
 #: e:\coding\cryengine\code\sandbox\plugins\editorcommon\renderviewport.cpp:1980
@@ -34,6 +33,9 @@ msgid "Camera Speed Height-Relative"
 msgstr "摄像机速度高度-相对"
 
 #: e:\coding\cryengine\code\sandbox\plugins\editorcommon\objects\baseobject.cpp:4122
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:31
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\lightingpreferences.cpp:18
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:80
 msgid "General"
 msgstr "常规"
 
@@ -75,4 +77,392 @@ msgstr "旋转"
 
 #: e:\coding\cryengine\code\sandbox\plugins\editorcommon\objects\baseobject.cpp:4242
 msgid "Scale"
-msgstr "缩放"
+msgstr "所有"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:32
+msgid "Enable Source Control"
+msgstr "启用版本控制"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:33
+msgid "External layers: Save only Modified"
+msgstr "外部图层: 仅在被修改时保存"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:34
+msgid "Freeze Read-only external layer on Load"
+msgstr "在加载时冻结只读外部图层"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:35
+msgid "Show all windows in taskbar (requires restart)"
+msgstr "在任务栏中显示所有窗口(需要重启)"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:38
+msgid "Console"
+msgstr "控制台"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:39
+msgid "Show Time In Console"
+msgstr "在控制台中显示时间"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:68
+msgid "Files"
+msgstr "文件"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:69
+msgid "Backup on Save"
+msgstr "保存时备份"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:72
+msgid "Text Editors"
+msgstr "文本编辑器"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:73
+msgid "Open C# solution instead of files"
+msgstr "打开C#解决方案而不是文件"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:74
+msgid "C# Text Editor"
+msgstr "C#文本编辑器"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:75
+msgid "Scripts Text Editor"
+msgstr "脚本文本编辑器"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:76
+msgid "Shaders Text Editor"
+msgstr "着色器文本编辑器"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:77
+msgid "BSpace Text Editor"
+msgstr "BSpace文本编辑器"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:78
+msgid "Standard Temporary Directory"
+msgstr "标准临时目录"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:79
+msgid "Texture Editor"
+msgstr "贴图编辑器"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:80
+msgid "Animation Editor"
+msgstr "动画编辑器"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:84
+msgid "Auto Back-up"
+msgstr "自动备份"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:85
+msgid "Enable"
+msgstr "启用"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:86
+msgid "Auto Backup Interval (Minutes)"
+msgstr "自动备份间隔(分钟)"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\generalpreferences.cpp:87
+msgid "Maximum Auto Backups"
+msgstr "最大自动备份"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\lightingpreferences.cpp:19
+msgid "Force Sky Update"
+msgstr "强制天空更新"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\lightingpreferences.cpp:21
+msgid "Experimental"
+msgstr "实验性功能"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\lightingpreferences.cpp:22
+msgid "Total Illumination"
+msgstr "Total Illumination"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:81
+msgid "Hide objects by config spec"
+msgstr "通过配置规格隐藏对象"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:82
+msgid "Synchronize 2D Viewports"
+msgstr "同步2D视口"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:83
+msgid "Perspective View FOV"
+msgstr "透视视图FOV"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:84
+msgid "Perspective View Aspect Ratio"
+msgstr "透视视图纵横比"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:85
+msgid "Enable Right-Click Context Menu"
+msgstr "启用右键菜单"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:88
+msgid "Display"
+msgstr "显示"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:89
+msgid "Show 4:3 Aspect Ratio Frame"
+msgstr "显示4:3纵横比帧"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:90
+msgid "Hide Mouse Cursor When Captured"
+msgstr "当鼠标指针被捕获时隐藏"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:91
+msgid "Drag Square Size"
+msgstr "拖拽方块大小"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:93
+msgid "Display Object Links"
+msgstr "显示对象链接"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:94
+msgid "Display Animation Tracks"
+msgstr "显示动画轨迹"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:95
+msgid "Always Show Radiuses"
+msgstr "始终显示半径"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:96
+msgid "Always Show Prefab Bounds"
+msgstr "始终显示预制边界框"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:97
+msgid "Show Bounding Boxes"
+msgstr "显示边界框"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:98
+msgid "Always Draw Entity Labels"
+msgstr "始终绘制Entity标签"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:99
+msgid "Always Show Trigger Bounds"
+msgstr "始终显示触发器边界框"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:100
+msgid "Show Object Icons"
+msgstr "显示对象图标"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:102
+msgid "Hide distanced helpers"
+msgstr "隐藏远距离的助手"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:105
+msgid "Display helpers up to given distance"
+msgstr "显示给定距离内的助手"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:108
+msgid "Scale object icons with distance"
+msgstr "根据距离缩放对象图标"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:111
+msgid "Threshold for distance scaling"
+msgstr "距离缩放阈值"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:114
+msgid "Show object icons on top of objects"
+msgstr "在对象顶部显示对象图标"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:115
+msgid "Threshold for showing selection helpers"
+msgstr "显示所选对象阈值"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:116
+msgid "Show Helpers of Frozen Objects"
+msgstr "显示冻结对象的助手"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:117
+msgid "Fill Selected Shapes"
+msgstr "填充所选形状"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:118
+msgid "Show Snapping Grid Guide"
+msgstr "显示对齐网格指南"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:119
+msgid "Display dimension figures"
+msgstr "显示尺寸图"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:120
+msgid "Display Selected Object Orientation"
+msgstr "显示选定的对象方向"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:121
+msgid "Tools Render Update Mutual Exclusive"
+msgstr "工具渲染更新互斥"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:124
+msgid "Map Viewport"
+msgstr "映射视口"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:125
+msgid "Swap X/Y Axis"
+msgstr "交换X/Y轴"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:126
+msgid "Map Texture Resolution"
+msgstr "映射贴图分辨率"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:129
+msgid "Text Labels"
+msgstr "文本标签"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:130
+msgid "Enabled"
+msgstr "启用"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:131
+msgid "Distance"
+msgstr "距离"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:172
+msgid "Debug Highlight"
+msgstr "调试高亮"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:175
+msgid "Breakable Materials"
+msgstr "易碎材质"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:176
+msgid "Missing Surface Types"
+msgstr "丢失表面类型"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:179
+msgid "Profiling"
+msgstr "分析"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:180
+msgid "Show Mesh Statistics on Mouse Over"
+msgstr "在鼠标指针经过时显示网格统计"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:183
+msgid "Warnings"
+msgstr "警告"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:184
+msgid "Warning Icons Draw Distance"
+msgstr "警告图标绘制距离"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:185
+msgid "Show Scale Warnings"
+msgstr "显示缩放警告"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:186
+msgid "Show Rotation Warnings"
+msgstr "显示旋转警告"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:189
+msgid "Debug Helper"
+msgstr "调试助手"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:190
+msgid "Show Entity Object Helper"
+msgstr "显示Entity对象助手"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:191
+msgid "Show Area Helper"
+msgstr "显示区域助手"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:192
+msgid "Show Shape Helper"
+msgstr "显示形状助手"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:193
+msgid "Show Brush Helper"
+msgstr "显示Brush助手"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:194
+msgid "Show Decal Helper"
+msgstr "显示贴花助手"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:195
+msgid "Show Prefab Helper"
+msgstr "显示预制助手"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:196
+msgid "Show Prefab Children Helper"
+msgstr "显示预制子物体助手"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:197
+msgid "Show Road Helper"
+msgstr "显示道路助手"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:198
+msgid "Show Group Helper"
+msgstr "显示组合助手"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:199
+msgid "Show Environment Probe Helper"
+msgstr "显示环境探针助手"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:272
+msgid "Speed"
+msgstr "速度"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:273
+msgid "Movement Speed"
+msgstr "移动速度"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:274
+msgid "Rotation Speed"
+msgstr "旋转速度"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:275
+msgid "Fast Movement Multiplier"
+msgstr "快速移动乘数"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:276
+msgid "Wheel Zoom Speed"
+msgstr "鼠标滚轮缩放速度"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:277
+msgid "Mouse Wheel Behavior"
+msgstr "鼠标滚轮行为"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:308
+msgid "Selection Preview Color"
+msgstr "选中预览颜色"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:309
+msgid "Prefab Bounding Box"
+msgstr "预制边界框"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:310
+msgid "Group Bounding Box"
+msgstr "组合边界框"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:311
+msgid "Entity Bounding Box"
+msgstr "Entity边界框"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:312
+msgid "Bounding Box Highlight Alpha"
+msgstr "边界框高亮Alpha"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:313
+msgid "Highlight Color"
+msgstr "高亮颜色"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:314
+msgid "Selection Color"
+msgstr "选中颜色"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:315
+msgid "Outline Width"
+msgstr "轮廓宽度"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:316
+msgid "Outline Ghost Alpha"
+msgstr "轮廓鬼影Alpha"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:317
+msgid "Geometry Highlight Alpha"
+msgstr "几何体高亮Alpha"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:318
+msgid "Solid Brush Geometry Color"
+msgstr "固态Brush几何体颜色"
+
+#: e:\coding\cryengine\code\sandbox\plugins\editorcommon\preferences\viewportpreferences.cpp:319
+msgid "Child Geometry Highlight Alpha"
+msgstr "子几何体高亮Alpha"

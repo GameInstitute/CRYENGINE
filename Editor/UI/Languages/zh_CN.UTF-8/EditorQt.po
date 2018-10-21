@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-21 04:21+0800\n"
-"PO-Revision-Date: 2018-10-21 04:36+0800\n"
+"PO-Revision-Date: 2018-10-21 10:23+0800\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -153,17 +153,17 @@ msgstr "恢复上一个撤销的操作"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\commands\editorcommands_general.cpp:225
 msgid "Brings the level editor window to front"
-msgstr "将"
+msgstr "将关卡编辑器带到前台"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\commands\editorcommands_general.cpp:229
 msgid ""
 "Opens an existing view pane specified by the pane class name. If no such "
 "pane exists, create it."
-msgstr ""
+msgstr "打开由窗格类名指定的现有视图窗格。如果不存在这样的窗格，则创建它。"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\commands\editorcommands_general.cpp:255
 msgid "Sets the system config spec."
-msgstr "设置系统配置规格"
+msgstr "设置系统配置规格。"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\leveleditor\editorcommands_level.cpp:213
 msgid "Create new layer"
@@ -171,83 +171,83 @@ msgstr "创建新图层"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\leveleditor\editorcommands_level.cpp:214
 msgid "Create new folder for layers"
-msgstr ""
+msgstr "为图层创建新文件夹"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\leveleditor\editorcommands_level.cpp:215
 msgid "Delete layer with specific name."
-msgstr ""
+msgstr "删除指定名称的图层。"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\leveleditor\editorcommands_level.cpp:217
 msgid "Freezes layer with specific name."
-msgstr ""
+msgstr "冻结指定名称的图层。"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\leveleditor\editorcommands_level.cpp:218
 msgid "Unfreezes layer with specific name."
-msgstr ""
+msgstr "解冻指定名称的图层。"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\leveleditor\editorcommands_level.cpp:220
 msgid "Freeze all layers"
-msgstr ""
+msgstr "冻结所有图层"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\leveleditor\editorcommands_level.cpp:221
 msgid "Unfreeze all layers"
-msgstr ""
+msgstr "解冻所有图层"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\leveleditor\editorcommands_level.cpp:223
 msgid "Toggle freeze all other layers"
-msgstr ""
+msgstr "切换冻结所有图层"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\leveleditor\editorcommands_level.cpp:226
 msgid "Freeze read-only layers"
-msgstr ""
+msgstr "冻结只读图层"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\leveleditor\editorcommands_level.cpp:229
 msgid "Hides layer with specific name."
-msgstr ""
+msgstr "隐藏指定名称的图层。"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\leveleditor\editorcommands_level.cpp:230
 msgid "Unhides layer with specific name."
-msgstr ""
+msgstr "显示指定名称的图层。"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\leveleditor\editorcommands_level.cpp:232
 msgid "Show all layers"
-msgstr ""
+msgstr "显示所有图层"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\leveleditor\editorcommands_level.cpp:234
 msgid "Hide all layers"
-msgstr ""
+msgstr "隐藏所有图层"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\leveleditor\editorcommands_level.cpp:237
 msgid "Toggle hide all other layers"
-msgstr ""
+msgstr "切换显示所有其它图层"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\leveleditor\editorcommands_level.cpp:241
 msgid "Focus camera on selection"
-msgstr ""
+msgstr "聚焦摄像机到所选"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\leveleditor\editorcommands_level.cpp:244
 msgid "Renames layer with specific name."
-msgstr ""
+msgstr "重命名指定名称的图层。"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\leveleditor\editorcommands_level.cpp:245
 msgid "Checks existence of layer with specific name."
-msgstr ""
+msgstr "检查指定名称的图层是否存在。"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\leveleditor\editorcommands_level.cpp:246
 msgid "Returns the name of the selected layer."
-msgstr ""
+msgstr "返回所选图层的名称。"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\leveleditor\editorcommands_level.cpp:247
 msgid "Selects the layer with the given name."
-msgstr ""
+msgstr "选择指定名称的图层。"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\leveleditor\editorcommands_level.cpp:248
 msgid "Get a list of all layer names in the level."
-msgstr ""
+msgstr "获取关卡中所有图层的名称列表。"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\leveleditor\leveleditor.cpp:1023
 msgid "Enable/Disable snapping to grid"
-msgstr ""
+msgstr "启用/禁用吸附到网格"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\leveleditor\leveleditor.cpp:1023
 #: e:\coding\cryengine\code\sandbox\editorqt\leveleditor\leveleditor.cpp:1030
@@ -257,67 +257,67 @@ msgstr ""
 #: e:\coding\cryengine\code\sandbox\editorqt\leveleditor\leveleditor.cpp:1062
 #: e:\coding\cryengine\code\sandbox\editorqt\leveleditor\leveleditor.cpp:1069
 msgid "0: Disable, 1: Enable"
-msgstr ""
+msgstr "0: 禁用, 1: 启用"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\leveleditor\leveleditor.cpp:1026
 msgid "Toggle snapping to grid"
-msgstr ""
+msgstr "切换吸附到网格"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\leveleditor\leveleditor.cpp:1030
 msgid "Enable/Disable snapping to angle"
-msgstr ""
+msgstr "启用/禁用吸附到角度"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\leveleditor\leveleditor.cpp:1033
 msgid "Toggle snapping to angle"
-msgstr ""
+msgstr "启用/禁用吸附到角度"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\leveleditor\leveleditor.cpp:1037
 msgid "Toggle snapping to scale"
-msgstr ""
+msgstr "启用/禁用吸附到缩放"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\leveleditor\leveleditor.cpp:1041
 msgid "Enable/Disable snapping to vertex"
-msgstr ""
+msgstr "启用/禁用吸附到顶点"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\leveleditor\leveleditor.cpp:1044
 msgid "Toggle snapping to vertex"
-msgstr ""
+msgstr "切换吸附到顶点"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\leveleditor\leveleditor.cpp:1048
 msgid "Enable/Disable snapping to privot"
-msgstr ""
+msgstr "启用/禁用吸附到枢轴"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\leveleditor\leveleditor.cpp:1051
 msgid "Toggle snapping to pivot"
-msgstr ""
+msgstr "切换吸附到枢轴"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\leveleditor\leveleditor.cpp:1055
 msgid "Enable/Disable snapping to terrain"
-msgstr ""
+msgstr "启用/禁用吸附到地形"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\leveleditor\leveleditor.cpp:1058
 msgid "Toggle snapping to terrain"
-msgstr ""
+msgstr "切换吸附到地形"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\leveleditor\leveleditor.cpp:1062
 msgid "Enable/Disable snapping to geometry"
-msgstr ""
+msgstr "启用/禁用吸附到几何体"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\leveleditor\leveleditor.cpp:1065
 msgid "Toggle snapping to geometry"
-msgstr ""
+msgstr "切换吸附到几何体"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\leveleditor\leveleditor.cpp:1069
 msgid "Enable/Disable snapping to surface normal"
-msgstr ""
+msgstr "启用/禁用吸附到表面法线"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\leveleditor\leveleditor.cpp:1072
 msgid "Toggle snapping to surface normal"
-msgstr ""
+msgstr "切换吸附到表面法线"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\leveleditor\leveleditor.cpp:1076
 msgid "Toggle display of helpers in the level editor viewport"
-msgstr ""
+msgstr "切换关卡编辑器视口中助手的显示"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\objects\entityobject.cpp:387
 msgid "Name"
@@ -374,7 +374,7 @@ msgstr ""
 
 #: e:\coding\cryengine\code\sandbox\editorqt\objects\entityobject.cpp:1334
 msgid "Link Tools"
-msgstr ""
+msgstr "链接工具"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\objects\entityobject.cpp:1339
 msgid "^Pick"
@@ -386,72 +386,72 @@ msgstr ""
 
 #: e:\coding\cryengine\code\sandbox\editorqt\objects\entityobject.cpp:1352
 msgid "Links"
-msgstr ""
+msgstr "链接"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\prefabs\prefabmanager.cpp:765
 msgid "Create prefab"
-msgstr ""
+msgstr "创建预制"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\prefabs\prefabmanager.cpp:769
 msgid "Add selection to prefab"
-msgstr ""
+msgstr "添加所选到预制"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\prefabs\prefabmanager.cpp:772
 msgid "Extract all objects"
-msgstr ""
+msgstr "提取所有对象"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\prefabs\prefabmanager.cpp:775
 msgid "Clone all objects"
-msgstr ""
+msgstr "克隆所有对象"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\prefabs\prefabmanager.cpp:778
 msgid "Open prefab"
-msgstr ""
+msgstr "打开预制"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\prefabs\prefabmanager.cpp:781
 msgid "Close prefab"
-msgstr ""
+msgstr "关闭预制"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\prefabs\prefabmanager.cpp:784
 msgid "Open all prefabs"
-msgstr ""
+msgstr "打开所有预制"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\prefabs\prefabmanager.cpp:787
 msgid "Close all prefabs"
-msgstr ""
+msgstr "关闭所有预制"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\prefabs\prefabmanager.cpp:790
 msgid "Reload all prefabs"
-msgstr ""
+msgstr "重新加载所有预制"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\qt\qtooltabmanager.cpp:110
 msgid "Loads a layout from file."
-msgstr ""
+msgstr "从文件加载布局。"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\qt\qtooltabmanager.cpp:114
 msgid "Saves current layout to a file."
-msgstr ""
+msgstr "保存当前布局到文件。"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\qt\qtooltabmanager.cpp:118
 msgid "Reset Layout"
-msgstr ""
+msgstr "重置布局"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\qt\qtooltabmanager.cpp:122
 msgid "Load Layout..."
-msgstr ""
+msgstr "加载布局..."
 
 #: e:\coding\cryengine\code\sandbox\editorqt\qt\qtooltabmanager.cpp:125
 msgid "Save Layout As..."
-msgstr ""
+msgstr "另存布局为..."
 
 #: e:\coding\cryengine\code\sandbox\editorqt\qt\widgets\qviewportheader.cpp:1289
 msgid "Toggles the display of helpers."
-msgstr ""
+msgstr "切换助手的显示。"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\qt\widgets\qviewportheader.cpp:1292
 msgid "Gets the display state of helpers."
-msgstr ""
+msgstr "获取助手的显示状态。"
 
 #: e:\coding\cryengine\code\sandbox\editorqt\qt\widgets\qviewportheader.cpp:1294
 msgid "Cycle display info."
-msgstr "循环显示信息"
+msgstr "循环显示信息."

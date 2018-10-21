@@ -2,27 +2,6 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="zh_CN" sourcelanguage="en_US">
 <context>
-    <name>CAboutDialog</name>
-    <message>
-        <location filename="../../../../Code/Sandbox/EditorQt/AboutDialog.cpp" line="22"/>
-        <source>CRYENGINE(R) Sandbox(TM) Editor
-Copyright(c) 2018, Crytek GmbH
-
-Crytek, Crytek logo, CRYENGINE, Sandbox are trademarks of Crytek.
-</source>
-        <translation>CRYENGINE(R) Sandbox(TM) 编辑器
-Copyright(c) 2018, Crytek GmbH
-
-Crytek, Crytek logo, CRYENGINE, Sandbox 是 Crytek的水印.
-</translation>
-    </message>
-    <message>
-        <location filename="../../../../Code/Sandbox/EditorQt/AboutDialog.cpp" line="28"/>
-        <source>&amp;Close</source>
-        <translation>&amp;关闭</translation>
-    </message>
-</context>
-<context>
     <name>CActiveLayerWidget</name>
     <message>
         <location filename="../../../../Code/Sandbox/EditorQt/LevelEditor/LevelExplorer.cpp" line="93"/>
@@ -2946,72 +2925,72 @@ Ctrl：添加到选择 Alt：缩放所选 Alt + Ctrl：旋转所选 DEL：删除
     <message>
         <location filename="../../../../Code/Sandbox/EditorQt/QT/QtMainFrameWidgets.h" line="70"/>
         <source>Select All</source>
-        <translation type="unfinished"></translation>
+        <translation>全选</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/EditorQt/QT/QtMainFrameWidgets.h" line="71"/>
         <source>Brushes</source>
-        <translation type="unfinished"></translation>
+        <translation>Brushes</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/EditorQt/QT/QtMainFrameWidgets.h" line="72"/>
         <source>No Brushes</source>
-        <translation type="unfinished"></translation>
+        <translation>无Brush</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/EditorQt/QT/QtMainFrameWidgets.h" line="73"/>
         <source>Entities</source>
-        <translation type="unfinished"></translation>
+        <translation>Entity</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/EditorQt/QT/QtMainFrameWidgets.h" line="74"/>
         <source>Prefabs</source>
-        <translation type="unfinished">预制</translation>
+        <translation>预制预制</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/EditorQt/QT/QtMainFrameWidgets.h" line="75"/>
         <source>Areas, Shapes</source>
-        <translation type="unfinished"></translation>
+        <translation>区域, 形状</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/EditorQt/QT/QtMainFrameWidgets.h" line="76"/>
         <source>AI Points</source>
-        <translation type="unfinished"></translation>
+        <translation>AI点</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/EditorQt/QT/QtMainFrameWidgets.h" line="77"/>
         <source>Decals</source>
-        <translation type="unfinished"></translation>
+        <translation>贴花</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/EditorQt/QT/QtMainFrameWidgets.h" line="78"/>
         <source>Solids</source>
-        <translation type="unfinished"></translation>
+        <translation>固体</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/EditorQt/QT/QtMainFrameWidgets.h" line="79"/>
         <source>No Solids</source>
-        <translation type="unfinished"></translation>
+        <translation>非固体</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/EditorQt/Commands/KeybindEditor.cpp" line="691"/>
         <source>Add Custom</source>
-        <translation type="unfinished"></translation>
+        <translation>添加自定义</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/EditorQt/Commands/KeybindEditor.cpp" line="692"/>
         <source>Reset All</source>
-        <translation type="unfinished"></translation>
+        <translation>重置所有</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/EditorQt/Commands/KeybindEditor.cpp" line="693"/>
         <source>Import...</source>
-        <translation type="unfinished"></translation>
+        <translation>导入...</translation>
     </message>
     <message>
         <location filename="../../../../Code/Sandbox/EditorQt/Commands/KeybindEditor.cpp" line="694"/>
         <source>Export...</source>
-        <translation type="unfinished"></translation>
+        <translation>导出...</translation>
     </message>
 </context>
 <context>

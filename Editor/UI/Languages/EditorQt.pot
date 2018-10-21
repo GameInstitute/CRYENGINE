@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-21 04:21+0800\n"
+"POT-Creation-Date: 2018-10-21 10:15+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,23 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: e:\coding\cryengine\code\sandbox\editorqt\aboutdialog.cpp:22
+msgid ""
+"CRYENGINE(R) Sandbox(TM) Editor\n"
+"Copyright(c) 2018, Crytek GmbH\n"
+"\n"
+"Crytek, Crytek logo, CRYENGINE, Sandbox are trademarks of Crytek.\n"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\aboutdialog.cpp:28
+msgid "&Close"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\aboutdialog.cpp:55
+#, c-format
+msgid "Version %d.%d.%d - Build %d"
+msgstr ""
 
 #: e:\coding\cryengine\code\sandbox\editorqt\gameexporter.cpp:2286
 msgid "Export SVOGI Data"
@@ -157,6 +174,179 @@ msgstr ""
 
 #: e:\coding\cryengine\code\sandbox\editorqt\commands\editorcommands_general.cpp:255
 msgid "Sets the system config spec."
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:43
+#: e:\coding\cryengine\code\sandbox\editorqt\mannequin\mannpreferences.cpp:24
+msgid "General"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:44
+msgid "Automatic Migration"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:45
+msgid "Show Node IDs"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:46
+msgid "Show ToolTips"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:47
+msgid "Edges On Top Of Nodes"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:48
+msgid "Spline Edges"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:49
+msgid "Highlight Selected Edges"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:101
+msgid "Opacity"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:102
+msgid "Arrow Color"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:103
+msgid "InArrow Highlighted Color"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:104
+msgid "OutArrow Highlighted Color"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:105
+msgid "Port Edge Highlighted Color"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:106
+msgid "Arrow Disabled Color"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:107
+msgid "Node Outline Color"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:108
+msgid "Node Outline Color Selected"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:109
+msgid "Node Background Color"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:110
+msgid "Node Selected Color"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:111
+msgid "Title Text Color"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:112
+msgid "Title Text Color Selected"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:113
+msgid "Text Color"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:114
+msgid "Background Color"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:115
+msgid "Grid Color"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:116
+msgid "Breakpoint Color"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:117
+msgid "Breakpoint Disabled Color"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:118
+msgid "Breakpoint Arrow Color"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:119
+msgid "Entity Port Not Connected Color"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:120
+msgid "Port Color"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:121
+msgid "Port Selected Color"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:122
+msgid "Entity Invalid Text Color"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:123
+msgid "Down Arrow Color"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:124
+msgid "Custom Node Background Color"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:125
+msgid "Custom Node Selected Background Color"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:126
+msgid "Port Debugging Color for the Initialization Step"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:127
+msgid "Port Debugging Color"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:128
+msgid "Port Text Debugging Color"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:129
+msgid "Quick Search Background Color"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:130
+msgid "Quick Search Result Text Color"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:131
+msgid "Quick Search Count Text Color"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:132
+msgid "Quick Search Border Color"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:133
+msgid "Debug Node Title Color"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:134
+msgid "Debug Node Background Color"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:135
+msgid "Node w/ Error Background Color"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\hypergraph\flowgraphpreferences.cpp:136
+msgid "Node w/ Error Title Color"
 msgstr ""
 
 #: e:\coding\cryengine\code\sandbox\editorqt\leveleditor\editorcommands_level.cpp:213
@@ -311,6 +501,22 @@ msgstr ""
 
 #: e:\coding\cryengine\code\sandbox\editorqt\leveleditor\leveleditor.cpp:1076
 msgid "Toggle display of helpers in the level editor viewport"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\mannequin\mannpreferences.cpp:25
+msgid "Default Preview File"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\mannequin\mannpreferences.cpp:26
+msgid "Size of tracks"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\mannequin\mannpreferences.cpp:27
+msgid "Hold Ctrl to Snap Scrubbing"
+msgstr ""
+
+#: e:\coding\cryengine\code\sandbox\editorqt\mannequin\mannpreferences.cpp:28
+msgid "Timeline Wheel Zoom Speed"
 msgstr ""
 
 #: e:\coding\cryengine\code\sandbox\editorqt\objects\entityobject.cpp:387
