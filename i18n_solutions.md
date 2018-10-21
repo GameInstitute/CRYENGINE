@@ -92,3 +92,18 @@ LANGUAGE=en_US.UTF-8
 
 ### 限制
 1. 无法本地化宏中的字符串
+
+## 备注
+如果想使用gettext翻译引擎相关模块
+
+修改对应模块的CMakeList.txt
+
+在最后添加
+
+target_link_libraries(${THIS_PROJECT} PRIVATE libiconv libintl)
+
+打开StdAfx.h
+
+添加#include <libintl.h>
+
+然后按照上述步骤使用gettext标记，并编写相应的 update.bat、translate.bat脚本
