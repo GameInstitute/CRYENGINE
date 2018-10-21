@@ -9,7 +9,9 @@
 ## Qt方法
 ### 本地化配置文件位置
 <CRYENGINE SDK>/editor.ini
+
 [Sandbox]
+
 Language=zh_cn
 
 其中,zh_cn表示为简体中文，同时也是<CRYENGINE SDK>/Editor/UI/Translations中翻译文件所在的子文件夹的名称。
