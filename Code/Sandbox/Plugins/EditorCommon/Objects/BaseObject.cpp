@@ -3510,24 +3510,24 @@ void CBaseObject::OnContextMenu(CPopupMenuItem* menu)
 	}
 
 	// Group and prefab menu items
-	menu->Add("Create Group", [=] {
+	menu->Add(gettext("Create Group"), [=] {
 		BeginUndoAndEnsureSelection();
 		GetIEditor()->OnGroupMake();
 		GetIEditor()->GetIUndoManager()->Accept("Create Group");
 	});
-	menu->Add("Create Prefab", [=] {
+	menu->Add(gettext("Create Prefab"), [=] {
 		BeginUndoAndEnsureSelection();
 		GetIEditor()->OnPrefabMake();
 		GetIEditor()->GetIUndoManager()->Accept("Create Prefab From Selection");
 	});
-	menu->Add("Add to...", [=]
+	menu->Add(gettext("Add to..."), [=]
 	{
 		BeginUndoAndEnsureSelection();
 		GetIEditor()->GetIUndoManager()->Accept("Select Object");
 		GetIEditor()->OnGroupAttach();
 	});
 
-	CPopupMenuItem& detachItem = menu->Add("Detach", [=] {
+	CPopupMenuItem& detachItem = menu->Add(gettext("Detach"), [=] {
 		BeginUndoAndEnsureSelection();
 		GetIEditor()->OnGroupDetach();
 		GetIEditor()->GetIUndoManager()->Accept("Detach From Group");
@@ -3541,14 +3541,14 @@ void CBaseObject::OnContextMenu(CPopupMenuItem* menu)
 	// Linking menu items
 	menu->AddSeparator();
 
-	menu->Add("Link to...", [=]
+	menu->Add(gettext("Link to..."), [=]
 	{
 		BeginUndoAndEnsureSelection();
 		GetIEditor()->GetIUndoManager()->Accept("Select Object");
 		GetIEditor()->OnLinkTo();
 	});
 
-	CPopupMenuItem& unlinkItem = menu->Add("Unlink", [=]
+	CPopupMenuItem& unlinkItem = menu->Add(gettext("Unlink"), [=]
 	{
 		BeginUndoAndEnsureSelection();
 		GetIEditor()->GetIUndoManager()->Accept("Select Object");
@@ -3564,7 +3564,7 @@ void CBaseObject::OnContextMenu(CPopupMenuItem* menu)
 	// Other object menu items
 	menu->AddSeparator();
 
-	menu->Add("Delete", [ = ]
+	menu->Add(gettext("Delete"), [ = ]
 	{
 		IObjectManager* manager = GetObjectManager();
 		BeginUndoAndEnsureSelection();
@@ -3572,8 +3572,8 @@ void CBaseObject::OnContextMenu(CPopupMenuItem* menu)
 		GetIEditor()->GetIUndoManager()->Accept("Delete Selection");
 	});
 
-	CPopupMenuItem& transformMenu = menu->Add("Transform");
-	transformMenu.Add("Clear Rotation", [ = ]
+	CPopupMenuItem& transformMenu = menu->Add(gettext("Transform"));
+	transformMenu.Add(gettext("Clear Rotation"), [ = ]
 	{
 		BeginUndoAndEnsureSelection();
 		const ISelectionGroup* pGroup = GetIEditor()->GetISelectionGroup();
@@ -3586,7 +3586,7 @@ void CBaseObject::OnContextMenu(CPopupMenuItem* menu)
 		GetIEditor()->GetIUndoManager()->Accept("Clear Rotation");
 	});
 
-	transformMenu.Add("Clear Scale", [ = ]
+	transformMenu.Add(gettext("Clear Scale"), [ = ]
 	{
 		BeginUndoAndEnsureSelection();
 		const ISelectionGroup* pGroup = GetIEditor()->GetISelectionGroup();
@@ -3599,7 +3599,7 @@ void CBaseObject::OnContextMenu(CPopupMenuItem* menu)
 		GetIEditor()->GetIUndoManager()->Accept("Clear Scale");
 	});
 
-	transformMenu.Add("Clear All", [ = ]
+	transformMenu.Add(gettext("Clear All"), [ = ]
 	{
 		BeginUndoAndEnsureSelection();
 		const ISelectionGroup* pGroup = GetIEditor()->GetISelectionGroup();
@@ -3626,7 +3626,7 @@ void CBaseObject::OnContextMenu(CPopupMenuItem* menu)
 		}
 
 		string sMenuTitle;
-		sMenuTitle.Format("Convert To %s", szTargetName);
+		sMenuTitle.Format(gettext("Convert To %s"), szTargetName);
 
 		menu->Add(sMenuTitle, [conversionFunc, this, sMenuTitle]
 		{
@@ -3640,7 +3640,7 @@ void CBaseObject::OnContextMenu(CPopupMenuItem* menu)
 	GetIEditor()->OnObjectContextMenuOpened(menu, this);
 
 	string assetPath = GetAssetPath();
-	CPopupMenuItem& showInAssetBrowser = menu->Add("Show in Asset Browser", [=]
+	CPopupMenuItem& showInAssetBrowser = menu->Add(gettext("Show in Asset Browser"), [=]
 	{
 		string command("asset.show_in_browser ");
 		command += assetPath;
