@@ -5,9 +5,6 @@
 #include "Menu/AbstractMenu.h"
 #include <AssetSystem/AssetManager.h>
 #include <CryCore/Platform/platform_impl.inl>
-#include <QCoreApplication>
-#include <QTranslator>
-#include <QSettings>	
 
 // Plugin instance
 static CDependencyGraph* g_pInstance = nullptr;
@@ -31,7 +28,7 @@ CDependencyGraph::CDependencyGraph()
 		}
 	}, (uintptr_t)this);
 
-	InitialTranslator("DependencyGraph", "DependencyGraph.qm");
+	InitialTranslator("DependencyGraph");
 }
 
 CDependencyGraph::~CDependencyGraph()

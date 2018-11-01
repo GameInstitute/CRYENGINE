@@ -6,10 +6,6 @@
 
 #include "Vicon/Vicon_ClientCodes.h"
 
-#include <QCoreApplication>
-#include <QTranslator>
-#include <QSettings>	
-
 REGISTER_PLUGIN(CFacialEditorPlugin);
 
 CFacialEditorPlugin::CFacialEditorPlugin()
@@ -22,7 +18,7 @@ CFacialEditorPlugin::CFacialEditorPlugin()
 	m_ViconClient = new CViconClient(this);
 #endif
 
-	InitialTranslator("FacialEditorPlugin", "FacialEditorPlugin.qm");
+	InitialTranslator("FacialEditorPlugin");
 }
 
 void CFacialEditorPlugin::OnEditorNotifyEvent(EEditorNotifyEvent event)

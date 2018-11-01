@@ -10,16 +10,12 @@
 #include "QtViewPane.h"
 #include "EditorEnvironmentWindow.h"
 
-#include <QCoreApplication>
-#include <QTranslator>
-#include <QSettings>
-
 class CEditorEnvironment : public IPlugin
 {
 public:
 	CEditorEnvironment()
 	{
-		InitialTranslator("EditorEnvironment","EditorEnvironment.qm");
+		InitialTranslator("EditorEnvironment");
 	}
 
 	int32       GetPluginVersion() override                          { return 1; }

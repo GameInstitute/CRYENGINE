@@ -6,10 +6,6 @@
 #include "EquipPack/EquipPackDialog.h"
 #include "EquipPack/EquipPackLib.h"
 
-#include <QCoreApplication>
-#include <QTranslator>
-#include <QSettings>
-
 //DECLARE_PYTHON_MODULE(gamesdk);
 
 class EditorGameSDK : public IPlugin
@@ -33,7 +29,7 @@ public:
 
 		CEquipPackLib::GetRootEquipPack().LoadLibs(true);
 
-		InitialTranslator("EditorGameSDK", "EditorGameSDK.qm");
+		InitialTranslator("EditorGameSDK");
 	}
 
 	int32       GetPluginVersion() override { return 1; }

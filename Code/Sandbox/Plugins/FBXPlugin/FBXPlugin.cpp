@@ -7,10 +7,6 @@
 
 #include "FBXExporter.h"
 
-#include <QCoreApplication>
-#include <QTranslator>
-#include <QSettings>	
-
 REGISTER_PLUGIN(CFBXPlugin);
 
 namespace PluginInfo
@@ -28,7 +24,7 @@ CFBXPlugin::CFBXPlugin()
 		pExportManager->RegisterExporter(new CFBXExporter());
 	}
 
-	InitialTranslator("FBXPlugin", "FBXPlugin.qm");
+	InitialTranslator("FBXPlugin");
 }
 
 CFBXPlugin::~CFBXPlugin()

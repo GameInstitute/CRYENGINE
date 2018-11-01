@@ -20,10 +20,6 @@
 #include <Cry3DEngine/CGF/CGFContent_info.h>
 // ^^^
 
-#include <QCoreApplication>
-#include <QTranslator>
-#include <QSettings>	
-
 #include "Serialization.h"
 
 #include "CharacterTool/CharacterToolForm.h"
@@ -61,7 +57,7 @@ public:
 			g_pCharacterToolSystem->animationCompressionManager.reset(new CAnimationCompressionManager());
 		}
 
-		InitialTranslator("EditorAnimation","EditorAnimation.qm");
+		InitialTranslator("EditorAnimation");
 	}
 
 	~CEditorAnimationPlugin()

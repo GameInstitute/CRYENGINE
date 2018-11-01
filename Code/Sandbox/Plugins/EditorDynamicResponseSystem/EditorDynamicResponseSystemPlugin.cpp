@@ -14,9 +14,6 @@
 #include <IEditor.h>
 #include <CrySystem/ISystem.h>
 #include <CryDynamicResponseSystem/IDynamicResponseSystem.h>
-#include <QCoreApplication>
-#include <QTranslator>
-#include <QSettings>	
 
 REGISTER_PLUGIN(CEditorDynamicResponseSystemPlugin);
 
@@ -24,5 +21,5 @@ CEditorDynamicResponseSystemPlugin::CEditorDynamicResponseSystemPlugin()
 {
 	CRY_ASSERT(gEnv->pDynamicResponseSystem->GetResponseManager());
 
-	InitialTranslator("EditorDynamicResponseSystem","EditorDynamicResponseSystem.qm");
+	InitialTranslator("EditorDynamicResponseSystem");
 }

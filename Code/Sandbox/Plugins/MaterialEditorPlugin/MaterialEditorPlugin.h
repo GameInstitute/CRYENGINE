@@ -2,16 +2,13 @@
 
 #pragma once
 #include "IPlugin.h"
-#include <QCoreApplication>
-#include <QTranslator>
-#include <QSettings>
 
 class CMaterialEditorPlugin : public IPlugin
 {
 public:
 	CMaterialEditorPlugin()
 	{
-		InitialTranslator("MaterialEditorPlugin", "MaterialEditorPlugin.qm");
+		InitialTranslator("MaterialEditorPlugin");
 	}
 	~CMaterialEditorPlugin() { /* exit point of the plugin, perform cleanup */ }
 

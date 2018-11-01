@@ -3,10 +3,6 @@
 #include "StdAfx.h"
 #include "SandboxPlugin.h"
 
-#include <QCoreApplication>
-#include <QTranslator>
-#include <QSettings>	
-
 #include <CryCore/Platform/platform_impl.inl>
 
 #include "MainDialog.h"
@@ -45,7 +41,7 @@ CFbxToolPlugin::CFbxToolPlugin()
 	assert(g_pInstance == nullptr);
 	g_pInstance = this;
 
-	InitialTranslator("MeshImporter", "MeshImporter.qm");
+	InitialTranslator("MeshImporter");
 }
 
 CFbxToolPlugin::~CFbxToolPlugin()

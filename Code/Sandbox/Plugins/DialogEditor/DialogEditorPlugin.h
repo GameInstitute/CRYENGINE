@@ -2,9 +2,6 @@
 
 #pragma once
 #include "IPlugin.h"
-#include <QCoreApplication>
-#include <QTranslator>
-#include <QSettings>	
 #include <libintl.h>
 
 class CDialogEditorPlugin : public IPlugin
@@ -12,7 +9,7 @@ class CDialogEditorPlugin : public IPlugin
 public:
 	CDialogEditorPlugin() 
 	{
-		InitialTranslator("DialogEditor", "DialogEditor.qm");
+		InitialTranslator("DialogEditor");
 	}
 	~CDialogEditorPlugin() { /* exit point of the plugin, perform cleanup */ }
 

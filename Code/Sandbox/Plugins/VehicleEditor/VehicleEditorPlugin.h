@@ -3,16 +3,12 @@
 #pragma once
 #include "IPlugin.h"
 
-#include <QCoreApplication>
-#include <QTranslator>
-#include <QSettings>
-
 class CVehicleEditorPlugin : public IPlugin
 {
 public:
 	CVehicleEditorPlugin() 
 	{
-		InitialTranslator("VehicleEditor", "VehicleEditor.qm");
+		InitialTranslator("VehicleEditor");
 	}
 	~CVehicleEditorPlugin() { /* exit point of the plugin, perform cleanup */ }
 

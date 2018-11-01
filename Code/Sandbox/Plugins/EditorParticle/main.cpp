@@ -4,9 +4,6 @@
 #include <CryCore/Platform/platform_impl.inl>
 #include "MainEditorWindow.h"
 #include "QT/QToolTabManager.h"
-#include <QCoreApplication>
-#include <QTranslator>
-#include <QSettings>	
 
 #include <AssetSystem/Asset.h>
 #include <AssetSystem/AssetManager.h>
@@ -54,7 +51,7 @@ class CParticleEditorPlugin : public IPlugin
 public:
 	CParticleEditorPlugin()
 	{
-		InitialTranslator("EditorParticle", "EditorParticle.qm");
+		InitialTranslator("EditorParticle");
 	}
 
 

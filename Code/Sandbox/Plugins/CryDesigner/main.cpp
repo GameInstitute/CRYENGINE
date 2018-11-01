@@ -19,10 +19,6 @@
 #include "QtViewPane.h"
 #include "UIs/DesignerDockable.h"
 
-#include <QCoreApplication>
-#include <QTranslator>
-#include <QSettings>	
-
 DECLARE_PYTHON_MODULE(designer);
 DECLARE_PYTHON_MODULE(uvmapping);
 
@@ -42,7 +38,7 @@ class EditorDesigner : public IPlugin, public IAutoEditorNotifyListener
 public:
 	EditorDesigner()
 	{
-		InitialTranslator("CryDesigner","CryDesigner.qm");
+		InitialTranslator("CryDesigner");
 	}
 	int32       GetPluginVersion() override { return 1; }
 	const char* GetPluginName() override    { return "CryDesigner"; }

@@ -3,10 +3,6 @@
 #include "StdAfx.h"
 #include "SandboxPlugin.h"
 
-#include <QCoreApplication>
-#include <QTranslator>
-#include <QSettings>	
-
 #include <CryCore/Platform/platform_impl.inl>
 
 #include <CryCore/Platform/CryLibrary.h>
@@ -91,7 +87,7 @@ CSubstancePlugin::CSubstancePlugin()
 	InitCrySubstanceLib(fileHandler);
 	EditorSubstance::CManager::Instance()->Init();
 
-	InitialTranslator("EditorSubstance", "EditorSubstance.qm");
+	InitialTranslator("EditorSubstance");
 }
 
 CSubstancePlugin::~CSubstancePlugin()

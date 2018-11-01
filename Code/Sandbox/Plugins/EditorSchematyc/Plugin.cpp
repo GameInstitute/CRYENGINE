@@ -2,11 +2,6 @@
 
 #include "StdAfx.h"
 #include "Plugin.h"
-
-#include <QCoreApplication>
-#include <QTranslator>
-#include <QSettings>	
-
 #include <CryCore/Platform/platform_impl.inl>
 
 #include "IResourceSelectorHost.h"
@@ -88,7 +83,7 @@ CSchematycPlugin::CSchematycPlugin()
 		CryLogAlways("[SchematycEditor]: Initialization complete");
 	}
 
-	InitialTranslator("EditorSchematyc", "EditorSchematyc.qm");
+	InitialTranslator("EditorSchematyc");
 }
 
 int32 CSchematycPlugin::GetPluginVersion()

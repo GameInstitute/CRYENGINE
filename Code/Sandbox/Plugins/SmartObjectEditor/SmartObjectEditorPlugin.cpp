@@ -2,10 +2,6 @@
 #include "StdAfx.h"
 #include "SmartObjectEditorPlugin.h"
 
-#include <QCoreApplication>
-#include <QTranslator>
-#include <QSettings>
-
 #include <CryCore/Platform/platform_impl.inl>
 
 #include <CrySandbox/CryFunction.h>
@@ -76,7 +72,7 @@ CSmartObjectEditorPlugin::CSmartObjectEditorPlugin()
 		return OnEditDeprecatedProperty(ePropertySOTemplate, oldValue, newValue);
 	}));
 
-	InitialTranslator("SmartObjectEditorPlugin", "SmartObjectEditorPlugin.qm");
+	InitialTranslator("SmartObjectEditorPlugin");
 }
 
 CSmartObjectEditorPlugin::~CSmartObjectEditorPlugin()

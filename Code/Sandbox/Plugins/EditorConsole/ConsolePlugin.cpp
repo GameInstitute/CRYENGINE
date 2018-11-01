@@ -33,10 +33,6 @@
 
 #include <CryCore/Platform/platform_impl.inl>
 
-#include <QCoreApplication>
-#include <QTranslator>
-#include <QSettings>	
-
 //single instance
 CConsolePlugin* CConsolePlugin::s_pInstance;
 
@@ -53,7 +49,7 @@ CConsolePlugin::CConsolePlugin() : CEngineListener(GetIEditor() ? GetIEditor()->
 		Init(CONSOLE_MAX_HISTORY);
 	}
 	
-	InitialTranslator("EditorConsole","EditorConsole.qm");
+	InitialTranslator("EditorConsole");
 }
 
 //release plugin instance

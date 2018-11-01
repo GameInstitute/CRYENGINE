@@ -6,10 +6,6 @@
 #include "StdAfx.h"
 #include "TrackViewPlugin.h"
 
-#include <QCoreApplication>
-#include <QTranslator>
-#include <QSettings>
-
 #include <CryCore/Platform/platform_impl.inl>
 
 #include "AnimationContext.h"
@@ -37,7 +33,7 @@ CTrackViewPlugin::CTrackViewPlugin()
 	ms_pAnimationContext = new CAnimationContext();
 	ms_pExporter = new CTrackViewExporter();
 
-	InitialTranslator("EditorTrackView", "EditorTrackView.qm");
+	InitialTranslator("EditorTrackView");
 }
 
 CTrackViewPlugin::~CTrackViewPlugin()
